@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0512BB182321159B0025951D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB172321159B0025951D /* RegistrationViewController.swift */; };
 		FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB2E231EC95A003AE340 /* AppDelegate.swift */; };
 		FE71BB31231EC95A003AE340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB30231EC95A003AE340 /* ViewController.swift */; };
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0512BB172321159B0025951D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FE71BB2B231EC95A003AE340 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71BB2E231EC95A003AE340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE71BB30231EC95A003AE340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0512BB162321155C0025951D /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0512BB172321159B0025951D /* RegistrationViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		FE71BB22231EC95A003AE340 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		FE71BB2D231EC95A003AE340 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				0512BB162321155C0025951D /* Registration */,
 				FE71BB2E231EC95A003AE340 /* AppDelegate.swift */,
 				FE71BB30231EC95A003AE340 /* ViewController.swift */,
 				FE71BB32231EC95A003AE340 /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0512BB182321159B0025951D /* RegistrationViewController.swift in Sources */,
 				FE71BB31231EC95A003AE340 /* ViewController.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 			);
