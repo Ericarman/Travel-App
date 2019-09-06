@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>360172777913-b2pnu3hsppl3v1o6v42t2p751frclenb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.360172777913-b2pnu3hsppl3v1o6v42t2p751frclenb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuhFFSH5pNmKw7dYRWTop4xfb2-FQXT1k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>360172777913</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>TravelApp</string>
+	<key>PROJECT_ID</key>
+	<string>travelapp-38818</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travelapp-38818.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:360172777913:ios:42fb60eb8f389ab3</string>
+	<key>DATABASE_URL</key>
+	<string>https://travelapp-38818.firebaseio.com</string>
+</dict>
+</plist>

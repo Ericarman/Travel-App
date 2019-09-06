@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
+		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FE71BB35231EC95B003AE340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE71BB38231EC95B003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE71BB3A231EC95B003AE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 				F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */,
 				EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				FE71BB35231EC95B003AE340 /* Assets.xcassets */,
 				FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */,
 				FE71BB3A231EC95B003AE340 /* Info.plist */,
+				FE92409A2322A36D0044594E /* GoogleService-Info.plist */,
 			);
 			path = TravelApp;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */,
+				FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */,
 				FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */,
 				FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */,
 			);
