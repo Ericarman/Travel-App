@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
 		FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB2E231EC95A003AE340 /* AppDelegate.swift */; };
-		FE71BB31231EC95A003AE340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB30231EC95A003AE340 /* ViewController.swift */; };
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
+		FE92409F2322AB4C0044594E /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE92409E2322AB4C0044594E /* Registration.storyboard */; };
+		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
+		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,14 @@
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FE71BB2B231EC95A003AE340 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71BB2E231EC95A003AE340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE71BB30231EC95A003AE340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE71BB33231EC95A003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE71BB35231EC95B003AE340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE71BB38231EC95B003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE71BB3A231EC95B003AE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE92409E2322AB4C0044594E /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		FE9240A02322AB770044594E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FE9240A22322AB800044594E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +84,33 @@
 		FE71BB2D231EC95A003AE340 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				FE71BB2E231EC95A003AE340 /* AppDelegate.swift */,
-				FE71BB30231EC95A003AE340 /* ViewController.swift */,
+				FE92409D2322AB260044594E /* Registration */,
+				FE92409C2322AAD90044594E /* Resources */,
 				FE71BB32231EC95A003AE340 /* Main.storyboard */,
-				FE71BB35231EC95B003AE340 /* Assets.xcassets */,
 				FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */,
 				FE71BB3A231EC95B003AE340 /* Info.plist */,
 				FE92409A2322A36D0044594E /* GoogleService-Info.plist */,
 			);
 			path = TravelApp;
+			sourceTree = "<group>";
+		};
+		FE92409C2322AAD90044594E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE71BB2E231EC95A003AE340 /* AppDelegate.swift */,
+				FE71BB35231EC95B003AE340 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE92409D2322AB260044594E /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FE92409E2322AB4C0044594E /* Registration.storyboard */,
+				FE9240A02322AB770044594E /* SignInViewController.swift */,
+				FE9240A22322AB800044594E /* SignUpViewController.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE92409F2322AB4C0044594E /* Registration.storyboard in Resources */,
 				FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */,
 				FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */,
 				FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */,
@@ -207,7 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE71BB31231EC95A003AE340 /* ViewController.swift in Sources */,
+				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
+				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eric-Hovhannisyan.TravelApp";
+				PRODUCT_BUNDLE_IDENTIFIER = TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eric-Hovhannisyan.TravelApp";
+				PRODUCT_BUNDLE_IDENTIFIER = TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
