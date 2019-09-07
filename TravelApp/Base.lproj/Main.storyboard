@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +64,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Po6-sf-Ec7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tts-aJ-pGK">
                                 <rect key="frame" x="150" y="372" width="116" height="29"/>
@@ -93,15 +96,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="RegisterNewAccountButton" destination="qig-B2-VBC" id="oWs-JI-cBy"/>
+                        <outlet property="emailTextField" destination="umv-Id-ANS" id="iV2-fT-3Ge"/>
+                        <outlet property="enterAsGuestButton" destination="9u2-aB-5IY" id="ACP-nH-fb5"/>
+                        <outlet property="forgotPasswordButton" destination="Tts-aJ-pGK" id="PZw-y4-ha9"/>
+                        <outlet property="passwordTextField" destination="3hr-Xe-laP" id="ZKs-KW-Gaj"/>
+                        <outlet property="signInButton" destination="ykQ-6z-gyd" id="eBd-Yq-fqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373.91304347826087" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="T3E-Rn-d3L">
             <objects>
-                <viewController id="AHr-yE-FKd" sceneMemberID="viewController">
+                <viewController id="AHr-yE-FKd" customClass="SignUpViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQt-Xg-Chw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +198,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2O-PQ-99e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1147.8260869565217" y="124.55357142857142"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="UvC-gn-jfC">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vOH-49-Zcg" customClass="HomeViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1nN-Eb-V4U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-O3-ad1">
+                                <rect key="frame" x="0.0" y="84" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kLE-O3-ad1" firstAttribute="leading" secondItem="NWE-gZ-uxW" secondAttribute="leading" id="F6q-dN-0mw"/>
+                            <constraint firstItem="NWE-gZ-uxW" firstAttribute="trailing" secondItem="kLE-O3-ad1" secondAttribute="trailing" id="Yg8-Lo-XS6"/>
+                            <constraint firstItem="kLE-O3-ad1" firstAttribute="top" secondItem="NWE-gZ-uxW" secondAttribute="top" constant="40" id="x7m-rc-yFn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NWE-gZ-uxW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Aw-tw-tM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266.666666666667" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>

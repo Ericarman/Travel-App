@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
+		FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A7A742323B3BD00517B4E /* HomeViewController.swift */; };
 		FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB2E231EC95A003AE340 /* AppDelegate.swift */; };
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FE3A7A742323B3BD00517B4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FE71BB2B231EC95A003AE340 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71BB2E231EC95A003AE340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE71BB33231EC95A003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,12 +86,12 @@
 		FE71BB2D231EC95A003AE340 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				FE92409D2322AB260044594E /* Registration */,
-				FE92409C2322AAD90044594E /* Resources */,
 				FE71BB32231EC95A003AE340 /* Main.storyboard */,
 				FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */,
 				FE71BB3A231EC95B003AE340 /* Info.plist */,
 				FE92409A2322A36D0044594E /* GoogleService-Info.plist */,
+				FE92409D2322AB260044594E /* Registration */,
+				FE92409C2322AAD90044594E /* Resources */,
 			);
 			path = TravelApp;
 			sourceTree = "<group>";
@@ -109,6 +111,7 @@
 				FE92409E2322AB4C0044594E /* Registration.storyboard */,
 				FE9240A02322AB770044594E /* SignInViewController.swift */,
 				FE9240A22322AB800044594E /* SignUpViewController.swift */,
+				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
 				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
+				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
