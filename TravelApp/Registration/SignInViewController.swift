@@ -24,10 +24,6 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func validateFields() {
-        
-    }
-    
     @IBAction func signInTapped(_ sender: Any) {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
             let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
