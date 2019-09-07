@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class SignInViewController: UIViewController {
+    
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
@@ -17,8 +18,6 @@ class SignInViewController: UIViewController {
     @IBOutlet var forgotPasswordButton: UIButton!
     @IBOutlet var enterAsGuestButton: UIButton!
     @IBOutlet var RegisterNewAccountButton: UIButton!
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
