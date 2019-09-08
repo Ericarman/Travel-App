@@ -15,7 +15,6 @@
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
-		FE92409F2322AB4C0044594E /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE92409E2322AB4C0044594E /* Registration.storyboard */; };
 		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		FE71BB38231EC95B003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE71BB3A231EC95B003AE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FE92409E2322AB4C0044594E /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		FE9240A02322AB770044594E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FE9240A22322AB800044594E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +117,6 @@
 		FE92409D2322AB260044594E /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				FE92409E2322AB4C0044594E /* Registration.storyboard */,
 				FE9240A02322AB770044594E /* SignInViewController.swift */,
 				FE9240A22322AB800044594E /* SignUpViewController.swift */,
 				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
@@ -187,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE92409F2322AB4C0044594E /* Registration.storyboard in Resources */,
 				FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */,
 				FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */,
 				FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */,
@@ -398,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD56F4Y23U;
 				INFOPLIST_FILE = TravelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD56F4Y23U;
 				INFOPLIST_FILE = TravelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

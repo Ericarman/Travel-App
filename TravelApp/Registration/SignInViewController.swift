@@ -21,6 +21,20 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.borderStyle = .none
+        passwordTextField.borderStyle = .none
+    
+    }
+
+    @IBAction func emailAddres(_ sender: UITextField) {
+        if emailTextField.isEditing == true{
+            emailTextField.isHighlighted = false
+        }
+    }
+    @IBAction func password(_ sender: UITextField) {
+        if passwordTextField.isEditing == true{
+            passwordTextField.isHighlighted = false
+        }
     }
     
     @IBAction func signInTapped(_ sender: Any) {
