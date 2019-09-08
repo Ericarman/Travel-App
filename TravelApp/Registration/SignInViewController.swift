@@ -7,25 +7,50 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
+    
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBOutlet var signInButton: UIButton!
+    @IBOutlet var forgotPasswordButton: UIButton!
+    @IBOutlet var enterAsGuestButton: UIButton!
+    @IBOutlet var RegisterNewAccountButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        emailTextField.borderStyle = .none
+        passwordTextField.borderStyle = .none
+    
+    }
 
     @IBAction func emailAddres(_ sender: UITextField) {
-        if emailAddress.isEditing == true{
-            emailAddress.isHighlighted = false
+        if emailTextField.isEditing == true{
+            emailTextField.isHighlighted = false
         }
     }
     @IBAction func password(_ sender: UITextField) {
-        if password.isEditing == true{
-            password.isHighlighted = false
+        if passwordTextField.isEditing == true{
+            passwordTextField.isHighlighted = false
         }
     }
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var emailAddress: UITextField!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        emailAddress.borderStyle = .none
-        password.borderStyle = .none
     
+    @IBAction func signInTapped(_ sender: Any) {
+        guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+            let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                // Error message
+                print(error!.localizedDescription)
+            } else {
+                // Go to home screen
+                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
+                self.view.window?.rootViewController = homeVC
+                self.view.window?.makeKeyAndVisible()
+            }
+        }
     }
 }
