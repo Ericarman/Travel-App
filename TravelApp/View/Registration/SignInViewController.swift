@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class SignInViewController: UIViewController {
     
+    private let userViewModel = UserViewModel()
+    
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
@@ -27,12 +29,12 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func emailAddres(_ sender: UITextField) {
-        if emailTextField.isEditing == true{
+        if emailTextField.isEditing == true {
             emailTextField.isHighlighted = false
         }
     }
     @IBAction func password(_ sender: UITextField) {
-        if passwordTextField.isEditing == true{
+        if passwordTextField.isEditing == true {
             passwordTextField.isHighlighted = false
         }
     }
@@ -41,16 +43,15 @@ class SignInViewController: UIViewController {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
             let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         
-        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            if error != nil {
-                // Error message
-                print(error!.localizedDescription)
-            } else {
-                // Go to home screen
-                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
+        userViewModel.signIn(email: email, Password: password) { (user) in
+            if let _ = user {
+                let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
                 self.view.window?.rootViewController = homeVC
                 self.view.window?.makeKeyAndVisible()
+            } else {
+                //error
             }
         }
+        
     }
 }
