@@ -8,7 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDataSource {
+    
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,4 +19,15 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "toursCell", for: indexPath) as? HomeCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        return cell
+    }
 }
