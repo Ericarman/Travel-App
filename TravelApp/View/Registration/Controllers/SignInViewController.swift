@@ -40,14 +40,17 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: Any) {
+        let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
+        
+        self.present(homeVC, animated: true, completion: nil)
+        
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
             let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         
         userViewModel.signIn(email: email, Password: password) { (user) in
             if let _ = user {
-                guard let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController else {
-                    return
-                }
+                let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
+                
                 self.present(homeVC, animated: true, completion: nil)
             } else {
                 //error
