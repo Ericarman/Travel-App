@@ -9,54 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TravelApp/ViewModel/UserViewModel.swift"
-            timestampString = "589889924.315574"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "signIn(email:Password:complition:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TravelApp.UserViewModel.signIn(email: Swift.String, Password: Swift.String, complition: (Swift.Optional&lt;TravelApp.User&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "TravelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerasim1003/Desktop/Travel-App/TravelApp/ViewModel/UserViewModel.swift"
-                  timestampString = "589889295.5255179"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "69">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQueryDocumentSnapshot&gt;) -&gt; () in TravelApp.UserViewModel.signIn(email: Swift.String, Password: Swift.String, complition: (Swift.Optional&lt;TravelApp.User&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "TravelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerasim1003/Desktop/Travel-App/TravelApp/ViewModel/UserViewModel.swift"
-                  timestampString = "589889295.531621"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "244">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TravelApp/Service/Registration.swift"
             timestampString = "589889924.315663"
             startingColumnNumber = "9223372036854775807"
@@ -185,22 +137,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TravelApp/ViewModel/UserViewModel.swift"
-            timestampString = "589889924.3170789"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "signIn(email:Password:complition:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TravelApp/Model/User.swift"
             timestampString = "589889924.3171459"
             startingColumnNumber = "9223372036854775807"
@@ -208,22 +144,6 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "init(data:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/ViewModel/UserViewModel.swift"
-            timestampString = "589889924.317201"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "signIn(email:Password:complition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
