@@ -43,6 +43,10 @@ class SignUpViewController: UIViewController {
                 self.errorLabel.text = error
             } else {
                 self.errorLabel.text = "Successs!!"
+                guard let signInVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInVC") as? SignInViewController else {
+                    return
+                }
+                self.present(signInVC, animated: true, completion: nil)
             }
         }
             

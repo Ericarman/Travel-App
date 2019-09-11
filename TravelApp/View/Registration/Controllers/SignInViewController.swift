@@ -45,9 +45,10 @@ class SignInViewController: UIViewController {
         
         userViewModel.signIn(email: email, Password: password) { (user) in
             if let _ = user {
-                let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
-                self.view.window?.rootViewController = homeVC
-                self.view.window?.makeKeyAndVisible()
+                guard let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController else {
+                    return
+                }
+                self.present(homeVC, animated: true, completion: nil)
             } else {
                 //error
             }

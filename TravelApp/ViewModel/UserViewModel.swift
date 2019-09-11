@@ -12,10 +12,10 @@ class UserViewModel {
     private var user: User?
     
     func signIn(email: String, Password: String, complition: @escaping (User?) -> Void) {
-        Registration.shared.signInUser(email: email, password: Password) { (user) in
-            if let user = user {
-                self.user = user
-                complition(user)
+        Registration.shared.signInUser(email: email, password: Password) { (data) in
+            if let data = data {
+                self.user = User(data: data)
+                complition(self.user)
             } else {
                 complition(nil)
             }

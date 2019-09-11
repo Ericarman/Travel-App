@@ -16,15 +16,18 @@ class Registration {
     private let db = Firestore.firestore()
 
     
-    func signInUser(email: String, password: String, completion: @escaping (User?) -> Void) {
+    func signInUser(email: String, password: String, completion: @escaping (QueryDocumentSnapshot?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
                 // Error message
                 print(error!.localizedDescription)
+                completion(nil)
             } else if let result = result {
-                self.getUserData(uid: result.user.uid, complition: { (user) in
-                    if let user = user {
-                        completion(user)
+                self.getUserData(uid: result.user.uid, completion: { (data) in
+                    if let data = data {
+                        completion(data)
+                    } else {
+                        completion(nil)
                     }
                 })
             }
@@ -37,9 +40,14 @@ class Registration {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if error == nil {
                 if let result = result {
-                    self.setUserData(firstName, lastName, email, phone, result.user.uid)
+                    self.setUserData(firstName, lastName, email, phone, result.user.uid, completion: { success in
+                        if success {
+                            completion(true)
+                        } else {
+                            completion(false)
+                        }
+                    })
                     
-                    completion(true)
                 }
             } else {
                 completion(false)
@@ -47,40 +55,29 @@ class Registration {
         }
     }
     
-    private func setUserData(_ firstName: String, _ lastName: String,_ email: String, _ phone: String, _ uid: String) {
+    private func setUserData(_ firstName: String, _ lastName: String, _ email: String, _ phone: String, _ uid: String, completion: @escaping (_ success: Bool) -> Void) {
+        
         db.collection("Users").addDocument(data: ["firstName": firstName, "lastName": lastName, "email": email, "phone": phone, "uid": uid], completion: { (error) in
             
-            if let error = error {
-                print(error.localizedDescription)
+            if error != nil {
+                completion(false)
+            } else {
+                completion(true)
             }
             
         })
     }
     
-    private func getUserData(uid: String, complition: @escaping (User?) -> Void ) {
-
+    private func getUserData(uid: String, completion: @escaping (QueryDocumentSnapshot?) -> Void) {
         db.collection("Users").whereField("uid", isEqualTo: uid).getDocuments { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {
                 let document = snapshot!.documents.first
-                if let documentDic = document?.data() {
-                    guard let firstName = documentDic["firstName"] as? String,
-                        let lastName = documentDic["lastName"] as? String,
-                        let email = documentDic["email"] as? String,
-                        let phone = documentDic["phone"] as? String else {
-                        complition(nil)
-                        return
-                    }
-                    let user = User(firstName: firstName, lastName: lastName, email: email, phoneNumber: phone)
-                    
-                    complition(user)
-                }
-                
+                completion(document)
             }
         }
-        
-        complition(nil)
+        completion(nil)
     }
     
 }
