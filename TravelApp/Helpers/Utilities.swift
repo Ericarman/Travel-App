@@ -26,11 +26,11 @@ class Utilities {
             return "passwords are note match"
         }
         
-        if self.isPasswordValid(password) {
+        if !self.isPasswordValid(password) {
             return "Please make sure your password is at least 8 characters, contains a special character and a number."
         }
         
-        if self.isEmailValid(email) {
+        if !self.isEmailValid(email) {
             return "email address is not valid"
         }
         
@@ -44,10 +44,10 @@ class Utilities {
         
     }
     
-    private func isEmailValid(_ password : String) -> Bool {
+    private func isEmailValid(_ email : String) -> Bool {
         
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
-        return passwordTest.evaluate(with: password)
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        return emailTest.evaluate(with: email)
         
     }
     

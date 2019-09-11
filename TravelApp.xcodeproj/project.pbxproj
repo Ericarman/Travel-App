@@ -102,7 +102,7 @@
 		0512BB8A232678790025951D /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
+				0512BB96232902D60025951D /* Controllers */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -113,6 +113,23 @@
 				0512BB9223267FFA0025951D /* Registration.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		0512BB95232902C50025951D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE9240A02322AB770044594E /* SignInViewController.swift */,
+				FE9240A22322AB800044594E /* SignUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0512BB96232902D60025951D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		369608D8D31B36C4CF83282D /* Frameworks */ = {
@@ -178,8 +195,7 @@
 		FE92409D2322AB260044594E /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				FE9240A02322AB770044594E /* SignInViewController.swift */,
-				FE9240A22322AB800044594E /* SignUpViewController.swift */,
+				0512BB95232902C50025951D /* Controllers */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
