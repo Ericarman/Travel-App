@@ -27,6 +27,8 @@
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
+		FE95EE13232A37FF00AA9393 /* AddTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE12232A37FF00AA9393 /* AddTourViewController.swift */; };
+		FE95EE15232A7A3B00AA9393 /* AttractionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE14232A7A3B00AA9393 /* AttractionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE9240A02322AB770044594E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FE9240A22322AB800044594E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FE95EE12232A37FF00AA9393 /* AddTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTourViewController.swift; sourceTree = "<group>"; };
+		FE95EE14232A7A3B00AA9393 /* AttractionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				FE92409D2322AB260044594E /* Registration */,
 				0512BB8A232678790025951D /* HomeScreen */,
+				FE95EE0F232A378500AA9393 /* AddTourScreen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +231,31 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		FE95EE0F232A378500AA9393 /* AddTourScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE95EE10232A37B800AA9393 /* Cell */,
+				FE95EE11232A37D200AA9393 /* Controllers */,
+			);
+			path = AddTourScreen;
+			sourceTree = "<group>";
+		};
+		FE95EE10232A37B800AA9393 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FE95EE14232A7A3B00AA9393 /* AttractionCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FE95EE11232A37D200AA9393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE95EE12232A37FF00AA9393 /* AddTourViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +379,8 @@
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
+				FE95EE13232A37FF00AA9393 /* AddTourViewController.swift in Sources */,
+				FE95EE15232A7A3B00AA9393 /* AttractionCollectionViewCell.swift in Sources */,
 				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
