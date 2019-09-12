@@ -50,7 +50,23 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-4c-c0Z">
+                                                    <rect key="frame" x="129" y="64.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lAE-4c-c0Z" firstAttribute="centerY" secondItem="rUh-4L-sll" secondAttribute="centerY" id="Hhh-mI-9IN"/>
+                                            <constraint firstItem="lAE-4c-c0Z" firstAttribute="centerX" secondItem="rUh-4L-sll" secondAttribute="centerX" id="RUw-tX-Z5s"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="tourNameLabel" destination="lAE-4c-c0Z" id="6lc-xF-GUa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
