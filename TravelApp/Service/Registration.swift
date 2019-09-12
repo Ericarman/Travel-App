@@ -14,7 +14,6 @@ class Registration {
     static let shared = Registration()
     
     private let db = Firestore.firestore()
-
     
     func signInUser(email: String, password: String, completion: @escaping (QueryDocumentSnapshot?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
