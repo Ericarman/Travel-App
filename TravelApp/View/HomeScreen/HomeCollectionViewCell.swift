@@ -10,4 +10,9 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var tourNameLabel: UILabel!
+    
+    func setup(name: String) {
+        tourNameLabel.text = name
+    }
 }

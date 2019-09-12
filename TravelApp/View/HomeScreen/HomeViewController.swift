@@ -10,23 +10,29 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDataSource {
     
+    private let toursViewModel = ToursViewModel()
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        toursViewModel.getTours { (tours) in
+            self.collectionView.reloadData()
+        }
         // Do any additional setup after loading the view.
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return toursViewModel.tours.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "toursCell", for: indexPath) as? HomeCollectionViewCell else {
             return UICollectionViewCell()
         }
+        
+        cell.setup(name: toursViewModel.tours[indexPath.row].name)
         
         return cell
     }
