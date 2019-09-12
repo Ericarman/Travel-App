@@ -13,7 +13,7 @@
 		0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9023267E7F0025951D /* UserViewModel.swift */; };
 		0512BB9323267FFA0025951D /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
-		05D108F723296CB80098E286 /* TourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* TourViewModel.swift */; };
+		05D108F723296CB80098E286 /* ToursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* ToursViewModel.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
@@ -36,7 +36,7 @@
 		0512BB9023267E7F0025951D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0512BB9223267FFA0025951D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		05D108F623296CB80098E286 /* TourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewModel.swift; sourceTree = "<group>"; };
+		05D108F623296CB80098E286 /* ToursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		05D108FA23296CDA0098E286 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		05D108FD23296E360098E286 /* ToursDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDownloader.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0512BB9023267E7F0025951D /* UserViewModel.swift */,
-				05D108F623296CB80098E286 /* TourViewModel.swift */,
+				05D108F623296CB80098E286 /* ToursViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				05D108F32329675E0098E286 /* Cell */,
-				0512BB96232902D60025951D /* Controllers */,
+				0512BB96232902D60025951D /* Controller */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -133,21 +133,21 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		0512BB95232902C50025951D /* Controllers */ = {
+		0512BB95232902C50025951D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FE9240A02322AB770044594E /* SignInViewController.swift */,
 				FE9240A22322AB800044594E /* SignUpViewController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		0512BB96232902D60025951D /* Controllers */ = {
+		0512BB96232902D60025951D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
 			);
-			name = Controllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		05D108F32329675E0098E286 /* Cell */ = {
@@ -221,7 +221,7 @@
 		FE92409D2322AB260044594E /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				0512BB95232902C50025951D /* Controllers */,
+				0512BB95232902C50025951D /* Controller */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 			files = (
 				05D108F923296CCD0098E286 /* Tour.swift in Sources */,
 				05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */,
-				05D108F723296CB80098E286 /* TourViewModel.swift in Sources */,
+				05D108F723296CB80098E286 /* ToursViewModel.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,

@@ -18,7 +18,6 @@ class ToursViewModel {
                     for document in querySnapshot {
                         self.tours.append(Tour(data: document)!)
                     }
-                    print(self.tours)
                     completion(self.tours)
                 }
             })
