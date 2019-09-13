@@ -12,6 +12,7 @@
 		0512BB8E23267CE80025951D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB8D23267CE80025951D /* User.swift */; };
 		0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9023267E7F0025951D /* UserViewModel.swift */; };
 		0512BB9323267FFA0025951D /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
+		05A5F7CF232BD56100834CE3 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7CE232BD56100834CE3 /* FavoritesCollectionViewController.swift */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F723296CB80098E286 /* ToursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* ToursViewModel.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
@@ -37,6 +38,7 @@
 		0512BB8D23267CE80025951D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0512BB9023267E7F0025951D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0512BB9223267FFA0025951D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		05A5F7CE232BD56100834CE3 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* ToursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				FE92409D2322AB260044594E /* Registration */,
 				0512BB8A232678790025951D /* HomeScreen */,
+				05A5F7CB232BD4EF00834CE3 /* Favorites */,
 				FE95EE0F232A378500AA9393 /* AddTourScreen */,
 			);
 			path = View;
@@ -122,6 +125,7 @@
 		0512BB8A232678790025951D /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				05A5F7C5232BD24B00834CE3 /* Protocols */,
 				05D108F32329675E0098E286 /* Cell */,
 				0512BB96232902D60025951D /* Controller */,
 			);
@@ -153,6 +157,37 @@
 				FE3A7A742323B3BD00517B4E /* HomeViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		05A5F7C5232BD24B00834CE3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		05A5F7CB232BD4EF00834CE3 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				05A5F7CD232BD51B00834CE3 /* Cell */,
+				05A5F7CC232BD51200834CE3 /* Controller */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		05A5F7CC232BD51200834CE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05A5F7CE232BD56100834CE3 /* FavoritesCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05A5F7CD232BD51B00834CE3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		05D108F32329675E0098E286 /* Cell */ = {
@@ -376,6 +411,7 @@
 				05D108F923296CCD0098E286 /* Tour.swift in Sources */,
 				05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */,
 				05D108F723296CB80098E286 /* ToursViewModel.swift in Sources */,
+				05A5F7CF232BD56100834CE3 /* FavoritesCollectionViewController.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,

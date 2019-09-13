@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9T-om-arh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3691" y="1702"/>
+            <point key="canvasLocation" x="5310" y="260"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="8Ja-Zi-5eR">
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fv3-a5-XMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4239" y="260"/>
+            <point key="canvasLocation" x="3906" y="260"/>
         </scene>
         <!--Add-->
         <scene sceneID="N3o-8u-Mhw">
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojO-aP-MiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4238" y="1006"/>
+            <point key="canvasLocation" x="4613" y="260"/>
         </scene>
         <!--Home-->
         <scene sceneID="8U9-jf-67U">
@@ -106,21 +106,49 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-4c-c0Z">
-                                                    <rect key="frame" x="129" y="64.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBt-23-YzH">
+                                                    <rect key="frame" x="20" y="124" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garni" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-ZY-Fvi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-QQ-Cv2">
+                                                    <rect key="frame" x="260" y="0.0" width="40" height="40"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-1" translatesAutoresizingMaskIntoConstraints="NO" id="aia-eC-yx1">
+                                                            <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="24" id="DaT-hd-4S9"/>
+                                                                <constraint firstAttribute="height" constant="24" id="WH7-Kl-4IJ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="aia-eC-yx1" firstAttribute="centerX" secondItem="fdJ-QQ-Cv2" secondAttribute="centerX" id="5ic-lG-MZ4"/>
+                                                        <constraint firstAttribute="height" constant="40" id="6lx-U8-fox"/>
+                                                        <constraint firstAttribute="width" constant="40" id="W0d-XR-kpf"/>
+                                                        <constraint firstItem="aia-eC-yx1" firstAttribute="centerY" secondItem="fdJ-QQ-Cv2" secondAttribute="centerY" id="ybm-CQ-VGS"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="lAE-4c-c0Z" firstAttribute="centerY" secondItem="rUh-4L-sll" secondAttribute="centerY" id="Hhh-mI-9IN"/>
-                                            <constraint firstItem="lAE-4c-c0Z" firstAttribute="centerX" secondItem="rUh-4L-sll" secondAttribute="centerX" id="RUw-tX-Z5s"/>
+                                            <constraint firstAttribute="trailing" secondItem="fdJ-QQ-Cv2" secondAttribute="trailing" id="IjT-4Q-J5I"/>
+                                            <constraint firstItem="DgC-ZY-Fvi" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="N8l-0c-A2h"/>
+                                            <constraint firstItem="VBt-23-YzH" firstAttribute="top" secondItem="DgC-ZY-Fvi" secondAttribute="bottom" constant="4" id="PA8-RS-RAV"/>
+                                            <constraint firstAttribute="bottom" secondItem="DgC-ZY-Fvi" secondAttribute="bottom" constant="30" id="bhp-xR-dBv"/>
+                                            <constraint firstAttribute="trailing" secondItem="DgC-ZY-Fvi" secondAttribute="trailing" id="ddw-uT-cqd"/>
+                                            <constraint firstItem="VBt-23-YzH" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" constant="20" id="iaJ-mm-pA4"/>
+                                            <constraint firstItem="fdJ-QQ-Cv2" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="wJG-lZ-8jF"/>
+                                            <constraint firstItem="DgC-ZY-Fvi" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" id="x40-Ke-8a0"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="tourNameLabel" destination="lAE-4c-c0Z" id="6lc-xF-GUa"/>
+                                            <outlet property="favoriteButtonView" destination="fdJ-QQ-Cv2" id="DwR-gf-jUE"/>
+                                            <outlet property="tourNameLabel" destination="VBt-23-YzH" id="F9z-1i-LsS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -146,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhg-RB-nil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3280" y="-471"/>
+            <point key="canvasLocation" x="3166.666666666667" y="259.82142857142856"/>
         </scene>
         <!--Profile-->
         <scene sceneID="WHg-sj-B5R">
@@ -162,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3Z-uR-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3280" y="2408"/>
+            <point key="canvasLocation" x="6007" y="260"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="WBe-xn-33c">
@@ -186,4 +214,8 @@
             <point key="canvasLocation" x="2452" y="260"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="garni" width="600" height="600"/>
+        <image name="star-1" width="24" height="24"/>
+    </resources>
 </document>

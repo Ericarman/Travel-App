@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController, UICollectionViewDataSource {
     
     private let toursViewModel = ToursViewModel()
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         toursViewModel.getTours { (tours) in
             self.collectionView.reloadData()
         }
-        // Do any additional setup after loading the view.
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,4 +36,5 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         
         return cell
     }
+    
 }
