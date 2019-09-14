@@ -8,25 +8,28 @@
 
 import UIKit
 
-class AddTourViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class AddTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var customTourCollectionView: UICollectionView!
+    @IBOutlet weak var customTourTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customTourCollectionView.delegate = self
-        customTourCollectionView.dataSource = self
+        customTourTableView.dataSource = self
+        customTourTableView.delegate = self
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    //MARK: -> TableView Delegate
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //TODO: (Eric)
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "attraction", for: indexPath) as? AttractionCollectionViewCell else {
-            return UICollectionViewCell()
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "attraction", for: indexPath) as? AttractionTableViewCell else {
+            return UITableViewCell()
         }
-        
+        //TODO: (Eric)
         return cell
     }
 }
