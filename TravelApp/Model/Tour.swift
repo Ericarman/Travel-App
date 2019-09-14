@@ -11,17 +11,11 @@ import FirebaseFirestore
 
 struct Tour {
     var name: String
-    var placesRef: DocumentReference
+    var places: [Place]
     
-    init?(data: QueryDocumentSnapshot) {
-        let dataDic = data.data()
-        
-        guard let name = dataDic["name"] as? String else {
-                return nil
-        }
-        
+    init?(name: String, places: [Place]) {
         self.name = name
-        self.placesRef = data.reference
+        self.places = places
         
     }
 }

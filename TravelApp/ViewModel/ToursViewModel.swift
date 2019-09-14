@@ -12,13 +12,29 @@ class ToursViewModel {
     var tours = [Tour]()
     
     func getTours(completion: @escaping ([Tour]?) -> Void) {
+        
         ToursDownloader.shared.getTours { (toursDic) in
             ToursDownloader.shared.getTours(completion: { (querySnapshot) in
                 if let querySnapshot = querySnapshot {
+                    let group = DispatchGroup()
                     for document in querySnapshot {
-                        self.tours.append(Tour(data: document)!)
+                        
+                        let name = document.data()["name"]
+                        group.enter()
+                        PlaceListDownloader.shared.getTourPlaces(from: document.reference, completion: { (placeList) in
+                            guard let placeList = placeList else {
+                                completion(nil)
+                                return
+                            }
+                            for (id, place) in placeList {
+                                
+                            }
+                            group.leave()
+                        })
                     }
-                    completion(self.tours)
+                    group.notify(queue: DispatchQueue.main) {
+                        completion(self.tours)
+                    }
                 }
             })
         }

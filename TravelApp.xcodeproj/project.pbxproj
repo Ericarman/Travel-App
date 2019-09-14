@@ -13,6 +13,7 @@
 		0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9023267E7F0025951D /* UserViewModel.swift */; };
 		0512BB9323267FFA0025951D /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
 		05A5F7CF232BD56100834CE3 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7CE232BD56100834CE3 /* FavoritesCollectionViewController.swift */; };
+		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F723296CB80098E286 /* ToursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* ToursViewModel.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
@@ -39,6 +40,7 @@
 		0512BB9023267E7F0025951D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0512BB9223267FFA0025951D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		05A5F7CE232BD56100834CE3 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
+		05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListDownloader.swift; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* ToursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				0512BB9223267FFA0025951D /* Registration.swift */,
 				05D108FD23296E360098E286 /* ToursDownloader.swift */,
 				05D108FF232A881C0098E286 /* PlaceDownloader.swift */,
+				05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
+				05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */,
 				0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
 				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
