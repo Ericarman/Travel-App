@@ -12,6 +12,8 @@ class AddTourViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var customTourTableView: UITableView!
     
+    var addTourViewModel = ToursViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customTourTableView.dataSource = self
