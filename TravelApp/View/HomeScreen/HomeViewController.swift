@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDataSource {
     
-    private let toursViewModel = ToursViewModel()
+    private let toursViewModel = TourListViewModel()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        cell.setup(name: toursViewModel.tours[indexPath.row].name)
+        cell.setup(with: toursViewModel.tours[indexPath.row])
         
         return cell
     }

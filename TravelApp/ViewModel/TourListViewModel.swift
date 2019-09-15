@@ -9,9 +9,9 @@
 import Foundation
 
 class TourListViewModel {
-    var tours = [Tour]()
+    var tours = [TourViewModel]()
     
-    func getTours(completion: @escaping ([Tour]?) -> Void) {
+    func getTours(completion: @escaping ([TourViewModel]?) -> Void) {
         
         ToursDownloader.shared.getTours(completion: { (querySnapshot) in
             if let querySnapshot = querySnapshot {
@@ -36,7 +36,7 @@ class TourListViewModel {
                             places.append(place)
                         }
                         tour = Tour(name: name, places: places)
-                        self.tours.append(tour)
+                        self.tours.append(TourViewModel(tour: tour))
                         group.leave()
                     })
                 }
@@ -49,6 +49,19 @@ class TourListViewModel {
 }
 
 class TourViewModel {
-    var tour: Tour?
+    private var tour: Tour
+    
+    init(tour: Tour) {
+        self.tour = tour
+    }
+    
+    var tourName: String {
+        return self.tour.name
+    }
+    
+    var tourPlaces: [Place] {
+        return self.tour.places
+    }
+    
 }
 

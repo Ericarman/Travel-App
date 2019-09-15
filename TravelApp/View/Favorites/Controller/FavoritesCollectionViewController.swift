@@ -10,7 +10,7 @@ import UIKit
 
 class FavoritesCollectionViewController: UICollectionViewController {
     
-    var tours = [Tour]()
+    private let toursViewModel = TourListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class FavoritesCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tours.count
+        return toursViewModel.tours.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -26,15 +26,15 @@ class FavoritesCollectionViewController: UICollectionViewController {
             return UICollectionViewCell()
         }
     
-        cell.setup(name: tours[indexPath.row].name)
+        cell.setup(with: self.toursViewModel.tours[indexPath.row])
     
         return cell
     }
     
     ///MARK: HomeViewControllerDelegate
     
-    func addFavoritetour(_ tour: Tour) {
-        self.tours.append(tour)
+    func addFavoritetour(_ tour: TourViewModel) {
+        self.toursViewModel.tours.append(tour)
     }
 
 }

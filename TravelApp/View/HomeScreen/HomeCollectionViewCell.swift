@@ -13,12 +13,13 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tourNameLabel: UILabel!
     @IBOutlet weak var favoriteButtonView: UIView!
     
-    func setup(name: String) {
-        tourNameLabel.text = name
+    func setup(with viewModel: TourViewModel) {
+        tourNameLabel.text = viewModel.tourName
         
         favoriteButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(favoriteButtonTapped)))
     }
     
     @objc func favoriteButtonTapped() {
+        
     }
 }
