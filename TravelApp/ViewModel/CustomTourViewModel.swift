@@ -9,5 +9,9 @@
 import Foundation
 
 class CustomTourViewModel {
+    private var customTour = CustomTour()
     
+    func getPlaces(completion: @escaping ([Place]?) -> Void ) {
+        //TODO: (Eric)
+    }
 }

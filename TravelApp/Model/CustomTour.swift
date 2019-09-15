@@ -9,14 +9,14 @@
 import Foundation
 
 
-class CustomTour {
+struct CustomTour {
     var places = [Place]()
     
-    func addPlace(_ place: Place) {
+    fileprivate mutating func addPlace(_ place: Place) {
         places.append(place)
     }
     
-    func removePlace(at index: Int) {
+    fileprivate mutating func removePlace(at index: Int) {
         places.remove(at: index)
     }
 }

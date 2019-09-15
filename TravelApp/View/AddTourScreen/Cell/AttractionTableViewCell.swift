@@ -9,5 +9,11 @@
 import UIKit
 
 class AttractionTableViewCell: UITableViewCell {
+    @IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
+    func setup(with viewModel: AttractionViewModel) {
+        mainImageView.image = viewModel.mainImage
+        descriptionLabel.text = viewModel.description
+    }
 }

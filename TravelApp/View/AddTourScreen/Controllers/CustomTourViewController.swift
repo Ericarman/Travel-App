@@ -1,5 +1,5 @@
 //
-//  AddTourViewController.swift
+//  CustomTourViewController.swift
 //  TravelApp
 //
 //  Created by Eric Hovhannisyan on 9/12/19.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class AddTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var customTourTableView: UITableView!
     
-    var addTourViewModel = ToursViewModel()
+    var customTourViewModel = CustomTourViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +20,11 @@ class AddTourViewController: UIViewController, UITableViewDataSource, UITableVie
         customTourTableView.delegate = self
     }
     
-    //MARK: -> TableView Delegate
+    //MARK: -> TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO: (Eric)
-        return 1
+        return customTourViewModel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
