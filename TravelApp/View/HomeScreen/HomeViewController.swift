@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDataSource {
     
-    private let toursViewModel = TourListViewModel()
+    let toursViewModel = TourListViewModel()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -32,6 +32,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
+        cell.delegate = self
         cell.setup(with: toursViewModel.tours[indexPath.row])
         
         return cell

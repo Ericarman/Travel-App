@@ -9,7 +9,9 @@
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
-        
+    
+    var delegate: HomeCollectionViewCellDelegate!
+    
     @IBOutlet weak var tourNameLabel: UILabel!
     @IBOutlet weak var favoriteButtonView: UIView!
     
@@ -20,6 +22,6 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func favoriteButtonTapped() {
-        
+        delegate.tour(with: self)
     }
 }
