@@ -24,7 +24,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO: (Eric)
-        return customTourViewModel
+        return customTourViewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,6 +32,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
             return UITableViewCell()
         }
         //TODO: (Eric)
+        cell.setup(with: customTourViewModel.cellViewModels[indexPath.row])
         return cell
     }
 }
