@@ -15,7 +15,7 @@ class CustomTourViewModel {
     func getPlaces(completion: @escaping ([Place]?) -> Void ) {
         //TODO: (Eric)
         //Get places from Firebase
-        PlaceDownloader.shared.getPlaces(from: <#T##DocumentReference#>, completion: <#T##([String : Any]?) -> Void#>)
+        //PlaceDownloader.shared.getPlaces(from: <#T##DocumentReference#>, completion: <#T##([String : Any]?) -> Void#>)
     }
     
     //TODO: (Eric)
