@@ -34,6 +34,11 @@
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
+		FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E3232EED3200834CE3 /* FavoriteVC+HomeCollectionViewCellDelegate.swift */; };
+		FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7CE232BD56100834CE3 /* FavoritesViewController.swift */; };
+		FE9551D1232FD70B00467527 /* HomeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D7232EA97A00834CE3 /* HomeCollectionViewCellDelegate.swift */; };
+		FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7DC232EDBA600834CE3 /* HomeViewControllerDelegate.swift */; };
+		FE9551D3232FD74C00467527 /* HomeVC+HomeCVCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7DA232EAB7500834CE3 /* HomeVC+HomeCVCellDelegate.swift */; };
 		FE95EE13232A37FF00AA9393 /* CustomTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -459,6 +464,7 @@
 			files = (
 				05D108F923296CCD0098E286 /* Tour.swift in Sources */,
 				05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */,
+				FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */,
 				FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */,
 				05D108F723296CB80098E286 /* TourListViewModel.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
@@ -466,18 +472,22 @@
 				FE17D7A3232CDFBF0054A389 /* CustomTourViewModel.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
 				FE95EE13232A37FF00AA9393 /* CustomTourViewController.swift in Sources */,
+				FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */,
 				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
+				FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */,
 				FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
 				05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */,
 				05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */,
+				FE9551D3232FD74C00467527 /* HomeVC+HomeCVCellDelegate.swift in Sources */,
 				0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */,
 				FE17D7A5232D1C7C0054A389 /* AttractionViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
+				FE9551D1232FD70B00467527 /* HomeCollectionViewCellDelegate.swift in Sources */,
 				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

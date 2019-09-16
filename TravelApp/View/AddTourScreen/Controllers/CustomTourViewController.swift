@@ -18,6 +18,10 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         customTourTableView.dataSource = self
         customTourTableView.delegate = self
+        
+        customTourViewModel.getPlaces { (places) in
+            self.customTourTableView.reloadData()
+        }
     }
     
     //MARK: -> TableView

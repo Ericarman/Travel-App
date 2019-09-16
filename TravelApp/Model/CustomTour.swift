@@ -10,7 +10,7 @@ import Foundation
 
 
 struct CustomTour {
-    var places = [Place]()
+    private(set) var places = [Place]()
     
     fileprivate mutating func addPlace(_ place: Place) {
         places.append(place)

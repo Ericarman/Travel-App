@@ -11,4 +11,9 @@ import UIKit
 struct AttractionViewModel {
     let mainImage: UIImage
     let description: String
+    
+    init(place: Place) {
+        self.description = place.name
+        self.mainImage = #imageLiteral(resourceName: "Icon")
+    }
 }

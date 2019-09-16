@@ -42,4 +42,23 @@ class PlaceListDownloader {
             
         }
     }
+    
+    func getPlaces(completion: @escaping ([String: [String: Any]]?) -> Void) {
+        let ref = db.collection("Places")
+        
+        var places = [String: [String: Any]]()
+        
+        DispatchQueue.global().async {
+            ref.getDocuments { (querySnapshot, error) in
+                if error != nil {
+                    print("Error getting documents")
+                } else {
+                    for document in querySnapshot!.documents {
+                        places[document.documentID] = document.data()
+                    }
+                    completion(places)
+                }
+            }
+        }
+    }
 }

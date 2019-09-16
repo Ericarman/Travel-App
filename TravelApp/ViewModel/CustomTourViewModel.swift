@@ -12,12 +12,24 @@ class CustomTourViewModel {
     private var customTour = CustomTour()
     var cellViewModels = [AttractionViewModel]()
     
-    func getPlaces(completion: @escaping ([Place]?) -> Void ) {
-        //TODO: (Eric)
-        //Get places from Firebase
-        //PlaceDownloader.shared.getPlaces(from: <#T##DocumentReference#>, completion: <#T##([String : Any]?) -> Void#>)
+    func getPlaces(completion: @escaping ([AttractionViewModel]?) -> Void ) {
+        
+        PlaceListDownloader.shared.getPlaces { (placesDict) in
+            guard let placesDict = placesDict else { completion(nil); return }
+            let group = DispatchGroup()
+            for (id, place) in placesDict {
+                group.enter()
+                guard let name = place["name"] as? String else { return }
+                let place = Place(id: id, name: name)
+                let viewModel = AttractionViewModel(place: place)
+                print(viewModel.description)
+                self.cellViewModels.append(viewModel)
+                group.leave()
+            }
+            
+            group.notify(queue: DispatchQueue.main, execute: {
+                completion(self.cellViewModels)
+            })
+        }
     }
-    
-    //TODO: (Eric)
-    //Update Model from ViewModel
 }
