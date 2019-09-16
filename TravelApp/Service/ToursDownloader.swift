@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseFirestore
 
-struct ToursDownloader {
+class ToursDownloader {
     static let shared = ToursDownloader()
     
     private let db = Firestore.firestore()
