@@ -20,6 +20,7 @@ class TourListViewModel {
                     var tour: Tour!
                     let data = document.data()
                     let name = data["name"] as! String
+                    let isFavorite = data["isFavorite"] as! Bool
                     
                     group.enter()
                     PlaceListDownloader.shared.getTourPlaces(from: document.reference, completion: { (placeList) in
@@ -35,7 +36,8 @@ class TourListViewModel {
                             let place = Place(id: id, name: name)
                             places.append(place)
                         }
-                        tour = Tour(name: name, places: places)
+                        
+                        tour = Tour(id: document.documentID, name: name, isFavorite: isFavorite, places: places)
                         self.tours.append(TourViewModel(tour: tour))
                         group.leave()
                     })
@@ -48,11 +50,15 @@ class TourListViewModel {
     }
 }
 
-class TourViewModel {
+class TourViewModel: Equatable {
     private var tour: Tour
     
     init(tour: Tour) {
         self.tour = tour
+    }
+    
+    var id: String {
+        return self.tour.id
     }
     
     var tourName: String {
@@ -60,7 +66,22 @@ class TourViewModel {
     }
     
     var tourPlaces: [Place] {
-        return self.tour.places
+        get {
+            return self.tour.places
+        }
+    }
+    
+    var isFavorite: Bool {
+        get {
+            return self.tour.isFavorite
+        }
+        set {
+            self.tour.isFavorite.toggle()
+        }
+    }
+    
+    static func == (lhs: TourViewModel, rhs: TourViewModel) -> Bool {
+        return lhs.id == rhs.id
     }
     
 }

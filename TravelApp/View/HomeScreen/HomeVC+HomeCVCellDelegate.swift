@@ -10,10 +10,17 @@ import Foundation
 
 extension HomeViewController: HomeCollectionViewCellDelegate {
     func tour(with cell: HomeCollectionViewCell) {
-        guard let row = collectionView.indexPath(for: cell)?.row else {
+        guard let indexPath = collectionView.indexPath(for: cell) else {
             return
         }
-        let tourViewModel = self.toursViewModel.tours[row]
+        cell.viewModel.isFavorite.toggle()
+        self.collectionView.reloadItems(at: [indexPath])
+
+        if cell.viewModel.isFavorite {
+            self.delegate.addToFavorites(tour: cell.viewModel)
+        } else {
+            self.delegate.deleteFromFavorites(tour: cell.viewModel)
+        }
     }
 
 }

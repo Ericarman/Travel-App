@@ -9,13 +9,20 @@
 import Foundation
 import FirebaseFirestore
 
-struct Tour {
+struct Tour: Equatable {
+    var id: String
     var name: String
+    var isFavorite: Bool
     var places: [Place]
     
-    init?(name: String, places: [Place]) {
+    init(id: String, name: String, isFavorite: Bool, places: [Place]) {
+        self.id = id
         self.name = name
+        self.isFavorite = isFavorite
         self.places = places
-        
+    }
+    
+    static func == (lhs: Tour, rhs: Tour) -> Bool {
+        return lhs.id == rhs.id
     }
 }
