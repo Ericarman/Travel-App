@@ -9,5 +9,6 @@
 import Foundation
 
 struct Place {
+    let id: String
     var name: String
 }

@@ -9,19 +9,20 @@
 import Foundation
 import FirebaseFirestore
 
-struct Tour {
+struct Tour: Equatable {
+    var id: String
     var name: String
-    var placesRef: DocumentReference
+    var isFavorite: Bool
+    var places: [Place]
     
-    init?(data: QueryDocumentSnapshot) {
-        let dataDic = data.data()
-        
-        guard let name = dataDic["name"] as? String else {
-                return nil
-        }
-        
+    init(id: String, name: String, isFavorite: Bool, places: [Place]) {
+        self.id = id
         self.name = name
-        self.placesRef = data.reference
-        
+        self.isFavorite = isFavorite
+        self.places = places
+    }
+    
+    static func == (lhs: Tour, rhs: Tour) -> Bool {
+        return lhs.id == rhs.id
     }
 }

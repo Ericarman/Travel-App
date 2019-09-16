@@ -10,9 +10,27 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var tourNameLabel: UILabel!
+    var delegate: HomeCollectionViewCellDelegate!
+    var isFavorite: Bool!
     
-    func setup(name: String) {
-        tourNameLabel.text = name
+    @IBOutlet weak var tourNameLabel: UILabel!
+    @IBOutlet weak var favoriteButtonView: UIView!
+    @IBOutlet weak var favoriteButtonImageView: UIImageView!
+    
+    weak var viewModel: TourViewModel!
+    
+    func setup(with viewModel: TourViewModel) {
+        self.viewModel = viewModel
+        tourNameLabel.text = viewModel.tourName
+        togglefavoriteImage()
+        favoriteButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(favoriteButtonTapped)))
+    }
+    
+    @objc func favoriteButtonTapped() {
+        delegate.tour(with: self)
+    }
+    
+    func togglefavoriteImage() {
+        self.favoriteButtonImageView.image = viewModel.isFavorite ? UIImage(named: "star-2") : UIImage(named: "star-1")
     }
 }
