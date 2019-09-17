@@ -13,7 +13,8 @@ import FirebaseFirestore
 class SignUpViewController: UIViewController {
     
     private let userViewModel = UserViewModel()
-
+    
+    @IBOutlet var txtFiled: UITextField?
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var emailAddressField: UITextField!
@@ -24,8 +25,9 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    
     
     @IBAction func signUpTapped(_ sender: Any) {
 
