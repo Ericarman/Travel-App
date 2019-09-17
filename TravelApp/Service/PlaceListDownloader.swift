@@ -51,6 +51,7 @@ class PlaceListDownloader {
         DispatchQueue.global().async {
             ref.getDocuments { (querySnapshot, error) in
                 if error != nil {
+                    completion(nil)
                     print("Error getting documents")
                 } else {
                     for document in querySnapshot!.documents {

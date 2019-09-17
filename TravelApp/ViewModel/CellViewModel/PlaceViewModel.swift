@@ -1,5 +1,5 @@
 //
-//  AttractionViewModel.swift
+//  PlaceViewModel.swift
 //  TravelApp
 //
 //  Created by Eric Hovhannisyan on 9/14/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-struct AttractionViewModel {
+struct PlaceViewModel {
     let mainImage: UIImage
     let description: String
     
     init(place: Place) {
         self.description = place.name
-        self.mainImage = #imageLiteral(resourceName: "Icon")
+        self.mainImage = #imageLiteral(resourceName: "garni")
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CustomTourViewModel.swift
+//  PlaceListViewModel.swift
 //  TravelApp
 //
 //  Created by Eric Hovhannisyan on 9/14/19.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class CustomTourViewModel {
+class PlaceListViewModel {
     private var customTour = CustomTour()
-    var cellViewModels = [AttractionViewModel]()
+    var cellViewModels = [PlaceViewModel]()
     
-    func getPlaces(completion: @escaping ([AttractionViewModel]?) -> Void ) {
+    func getPlaces(completion: @escaping ([PlaceViewModel]?) -> Void ) {
         
         PlaceListDownloader.shared.getPlaces { (placesDict) in
             guard let placesDict = placesDict else { completion(nil); return }
@@ -21,7 +21,7 @@ class CustomTourViewModel {
                 group.enter()
                 guard let name = place["name"] as? String else { return }
                 let place = Place(id: id, name: name)
-                let viewModel = AttractionViewModel(place: place)
+                let viewModel = PlaceViewModel(place: place)
                 print(viewModel.description)
                 self.cellViewModels.append(viewModel)
                 group.leave()

@@ -12,7 +12,7 @@ class AttractionTableViewCell: UITableViewCell {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    func setup(with viewModel: AttractionViewModel) {
+    func setup(with viewModel: PlaceViewModel) {
         mainImageView.image = viewModel.mainImage
         descriptionLabel.text = viewModel.description
     }

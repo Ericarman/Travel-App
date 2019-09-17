@@ -12,7 +12,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var customTourTableView: UITableView!
     
-    var customTourViewModel = CustomTourViewModel()
+    var customTourViewModel = PlaceListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
