@@ -6,7 +6,7 @@
 //  Copyright © 2019 Eric Hovhannisyan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class TourListViewModel {
     var tours = [TourViewModel]()
@@ -29,17 +29,30 @@ class TourListViewModel {
                             return
                         }
                         var places = [Place]()
+                        let group2 = DispatchGroup()
                         for (id, place) in placeList {
-                            guard let name = place["name"] as? String else {
+                            guard let name = place["name"] as? String,
+                                let imageUrl = place["image"] as? String else {
                                 return
                             }
-                            let place = Place(id: id, name: name)
-                            places.append(place)
+                            group2.enter()
+                            ImageDownloader.shared.getImage(from: imageUrl, completion: { (data) in
+                                guard let data = data else {
+                                    completion(nil)
+                                    return
+                                }
+                                //TODO: load image
+                                let image = UIImage(data: data)
+                                let place = Place(id: id, name: name, image: image!)
+                                places.append(place)
+                                group2.leave()
+                            })
                         }
-                        
-                        tour = Tour(id: document.documentID, name: name, isFavorite: isFavorite, places: places)
-                        self.tours.append(TourViewModel(tour: tour))
-                        group.leave()
+                        group2.notify(queue: DispatchQueue.main) {
+                            tour = Tour(id: document.documentID, name: name, isFavorite: isFavorite, places: places)
+                            self.tours.append(TourViewModel(tour: tour))
+                            group.leave()
+                        }
                     })
                 }
                 group.notify(queue: DispatchQueue.main) {

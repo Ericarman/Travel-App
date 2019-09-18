@@ -20,7 +20,7 @@ class PlaceListViewModel {
             for (id, place) in placesDict {
                 group.enter()
                 guard let name = place["name"] as? String else { return }
-                let place = Place(id: id, name: name)
+                let place = Place(id: id, name: name, image: nil)
                 let viewModel = PlaceViewModel(place: place)
                 print(viewModel.description)
                 self.cellViewModels.append(viewModel)
