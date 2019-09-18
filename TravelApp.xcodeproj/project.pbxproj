@@ -15,7 +15,6 @@
 		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
-		05D108F723296CB80098E286 /* TourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* TourListViewModel.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
@@ -40,7 +39,8 @@
 		FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7DC232EDBA600834CE3 /* HomeViewControllerDelegate.swift */; };
 		FE9551D3232FD74C00467527 /* HomeVC+HomeCVCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7DA232EAB7500834CE3 /* HomeVC+HomeCVCellDelegate.swift */; };
 		FE9551D52331499C00467527 /* TourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9551D42331499C00467527 /* TourViewModel.swift */; };
-		FE95EE13232A37FF00AA9393 /* CustomTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */; };
+		FE9551D7233239F800467527 /* TourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* TourListViewModel.swift */; };
+		FE9551D823323AE300467527 /* CustomTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,8 +143,6 @@
 				05D108F623296CB80098E286 /* TourListViewModel.swift */,
 				FE17D7A2232CDFBF0054A389 /* PlaceListViewModel.swift */,
 				FE17D7A6232D1C830054A389 /* CellViewModel */,
-				05D108F623296CB80098E286 /* TourViewModel.swift */,
-				FE17D7A2232CDFBF0054A389 /* CustomTourViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -471,21 +469,11 @@
 				05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */,
 				FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */,
 				FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */,
-				05D108F723296CB80098E286 /* TourListViewModel.swift in Sources */,
-				05D108F723296CB80098E286 /* TourViewModel.swift in Sources */,
-				05D108F723296CB80098E286 /* TourListViewModel.swift in Sources */,
-				05A5F7DD232EDBA600834CE3 /* HomeViewControllerDelegate.swift in Sources */,
-				05A5F7CF232BD56100834CE3 /* FavoritesViewController.swift in Sources */,
-				05A5F7DB232EAB7500834CE3 /* HomeVC+HomeCVCellDelegate.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE17D7A3232CDFBF0054A389 /* PlaceListViewModel.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
-				FE95EE13232A37FF00AA9393 /* CustomTourViewController.swift in Sources */,
 				FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */,
-				05A5F7D8232EA97A00834CE3 /* HomeCollectionViewCellDelegate.swift in Sources */,
-				FE95EE13232A37FF00AA9393 /* AddTourViewController.swift in Sources */,
-				FE95EE15232A7A3B00AA9393 /* AttractionCollectionViewCell.swift in Sources */,
 				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
@@ -494,10 +482,12 @@
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
+				FE9551D823323AE300467527 /* CustomTourViewController.swift in Sources */,
 				05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */,
 				FE9551D52331499C00467527 /* TourViewModel.swift in Sources */,
 				05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */,
 				FE9551D3232FD74C00467527 /* HomeVC+HomeCVCellDelegate.swift in Sources */,
+				FE9551D7233239F800467527 /* TourListViewModel.swift in Sources */,
 				0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */,
 				FE17D7A5232D1C7C0054A389 /* PlaceViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
