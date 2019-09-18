@@ -6,7 +6,7 @@
 //  Copyright © 2019 Eric Hovhannisyan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class TourViewModel: Equatable {
     private var tour: Tour
@@ -21,6 +21,10 @@ class TourViewModel: Equatable {
     
     var tourName: String {
         return self.tour.name
+    }
+    
+    var tourImage: UIImage {
+        return self.tour.places[0].image!
     }
     
     var tourPlaces: [Place] {

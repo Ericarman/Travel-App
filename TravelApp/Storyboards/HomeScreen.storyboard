@@ -57,7 +57,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garni" translatesAutoresizingMaskIntoConstraints="NO" id="toO-hQ-2lh">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="toO-hQ-2lh">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n5-Nq-DER">
@@ -94,6 +94,7 @@
                                         <connections>
                                             <outlet property="favoriteButtonImageView" destination="pRe-Z8-pb3" id="A7A-0D-O1b"/>
                                             <outlet property="favoriteButtonView" destination="0n5-Nq-DER" id="ioM-3x-hQc"/>
+                                            <outlet property="tourImageView" destination="toO-hQ-2lh" id="MfQ-jP-TRa"/>
                                             <outlet property="tourNameLabel" destination="Qta-Ba-cB3" id="mBh-hH-DkE"/>
                                         </connections>
                                     </collectionViewCell>
@@ -228,7 +229,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garni" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-ZY-Fvi">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-ZY-Fvi">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-QQ-Cv2">
@@ -265,6 +266,7 @@
                                         <connections>
                                             <outlet property="favoriteButtonImageView" destination="aia-eC-yx1" id="fjX-SX-1tF"/>
                                             <outlet property="favoriteButtonView" destination="fdJ-QQ-Cv2" id="DwR-gf-jUE"/>
+                                            <outlet property="tourImageView" destination="DgC-ZY-Fvi" id="LRI-4f-4Tj"/>
                                             <outlet property="tourNameLabel" destination="VBt-23-YzH" id="F9z-1i-LsS"/>
                                         </connections>
                                     </collectionViewCell>
@@ -353,7 +355,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="garni" width="600" height="600"/>
         <image name="star-1" width="24" height="24"/>
     </resources>
 </document>

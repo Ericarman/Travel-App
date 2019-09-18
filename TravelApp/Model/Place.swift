@@ -6,9 +6,10 @@
 //  Copyright © 2019 Eric Hovhannisyan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Place {
     let id: String
     var name: String
+    var image: UIImage?
 }
