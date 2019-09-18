@@ -12,5 +12,6 @@ target 'TravelApp' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
   pod 'Protobuf', :inhibit_warnings => true
 end
