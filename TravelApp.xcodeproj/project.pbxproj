@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0506ADA423323FC800894EF6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506ADA323323FC800894EF6 /* ImageDownloader.swift */; };
 		0512BB602323F8E20025951D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB5F2323F8E20025951D /* Utilities.swift */; };
 		0512BB8C232678CE0025951D /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0512BB8B232678CE0025951D /* HomeScreen.storyboard */; };
 		0512BB8E23267CE80025951D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB8D23267CE80025951D /* User.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0506ADA323323FC800894EF6 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		0512BB5F2323F8E20025951D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0512BB8B232678CE0025951D /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		0512BB8D23267CE80025951D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				05D108FD23296E360098E286 /* ToursDownloader.swift */,
 				05D108FF232A881C0098E286 /* PlaceDownloader.swift */,
 				05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */,
+				0506ADA323323FC800894EF6 /* ImageDownloader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
+				0506ADA423323FC800894EF6 /* ImageDownloader.swift in Sources */,
 				05A5F7D8232EA97A00834CE3 /* HomeCollectionViewCellDelegate.swift in Sources */,
 				FE95EE13232A37FF00AA9393 /* AddTourViewController.swift in Sources */,
 				FE95EE15232A7A3B00AA9393 /* AttractionCollectionViewCell.swift in Sources */,
