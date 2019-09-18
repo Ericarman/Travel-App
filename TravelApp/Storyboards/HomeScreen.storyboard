@@ -138,7 +138,7 @@
             </objects>
             <point key="canvasLocation" x="4613" y="260"/>
         </scene>
-        <!--Custom Tour View Controller-->
+        <!--Custom Tour-->
         <scene sceneID="4xI-vN-Mhc">
             <objects>
                 <viewController id="aN3-8w-ihH" customClass="CustomTourViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="esE-h8-Rbc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="384" width="414" height="512"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="attraction" rowHeight="206" id="S0o-on-Qeh" customClass="AttractionTableViewCell" customModule="TravelApp" customModuleProvider="target">
@@ -177,25 +177,35 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="D13-Gv-6Kd">
+                                <rect key="frame" x="0.0" y="308" width="414" height="56"/>
+                                <color key="barTintColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lto-28-g92" firstAttribute="trailing" secondItem="esE-h8-Rbc" secondAttribute="trailing" id="Sqe-ng-e2a"/>
-                            <constraint firstItem="lto-28-g92" firstAttribute="bottom" secondItem="esE-h8-Rbc" secondAttribute="bottom" constant="100" id="Xrw-r6-p9h"/>
-                            <constraint firstItem="esE-h8-Rbc" firstAttribute="top" secondItem="lto-28-g92" secondAttribute="top" id="bk8-Zh-pK4"/>
-                            <constraint firstItem="esE-h8-Rbc" firstAttribute="leading" secondItem="lto-28-g92" secondAttribute="leading" id="tu6-q5-3yA"/>
+                            <constraint firstItem="esE-h8-Rbc" firstAttribute="leading" secondItem="lto-28-g92" secondAttribute="leading" id="1sN-Cv-BXV"/>
+                            <constraint firstItem="lto-28-g92" firstAttribute="trailing" secondItem="D13-Gv-6Kd" secondAttribute="trailing" id="JsK-U6-GBa"/>
+                            <constraint firstItem="esE-h8-Rbc" firstAttribute="trailing" secondItem="lto-28-g92" secondAttribute="trailing" id="Oeg-rH-8MN"/>
+                            <constraint firstItem="esE-h8-Rbc" firstAttribute="top" secondItem="D13-Gv-6Kd" secondAttribute="bottom" constant="20" id="XFr-o2-oSN"/>
+                            <constraint firstItem="D13-Gv-6Kd" firstAttribute="leading" secondItem="lto-28-g92" secondAttribute="leading" id="bZY-f4-ci2"/>
+                            <constraint firstItem="D13-Gv-6Kd" firstAttribute="top" secondItem="lto-28-g92" secondAttribute="top" constant="220" id="vRm-I6-pAT"/>
+                            <constraint firstAttribute="bottom" secondItem="esE-h8-Rbc" secondAttribute="bottom" id="zRk-sv-BR2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lto-28-g92"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lmF-st-z56"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Custom Tour" id="KLi-wm-TUS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="p2b-LT-e92"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gd8-pC-ro6"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="customTourTableView" destination="esE-h8-Rbc" id="lyH-h2-ULn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfR-dv-8LR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6068.115942028986" y="1003.7946428571428"/>
+            <point key="canvasLocation" x="5328.985507246377" y="1044.6428571428571"/>
         </scene>
         <!--Home-->
         <scene sceneID="8U9-jf-67U">
@@ -349,7 +359,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tsr-ae-QYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5157.971014492754" y="1003.7946428571428"/>
+            <point key="canvasLocation" x="4525" y="1045"/>
         </scene>
     </scenes>
     <resources>
