@@ -197,7 +197,11 @@
                         <viewLayoutGuide key="safeArea" id="lto-28-g92"/>
                     </view>
                     <navigationItem key="navigationItem" title="Custom Tour" id="KLi-wm-TUS">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="p2b-LT-e92"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="p2b-LT-e92">
+                            <connections>
+                                <action selector="cancelTapped:" destination="aN3-8w-ihH" id="lvf-4m-kYD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="gd8-pC-ro6"/>
                     </navigationItem>
                     <connections>

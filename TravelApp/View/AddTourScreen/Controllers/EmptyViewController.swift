@@ -13,7 +13,13 @@ class EmptyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let addTourViewController = storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController") else { return }
+//        guard let addTourViewController = storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController") else { return }
+//        
+//        self.present(addTourViewController, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let addTourViewController = storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController"), tabBarController!.selectedIndex != 2 else { return }
         
         self.present(addTourViewController, animated: true)
     }

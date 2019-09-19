@@ -27,16 +27,21 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     //MARK: -> TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO: (Eric)
         return customTourViewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "attraction", for: indexPath) as? AttractionTableViewCell else {
             return UITableViewCell()
         }
-        //TODO: (Eric)
+        
         cell.setup(with: customTourViewModel.cellViewModels[indexPath.row])
         return cell
     }
+    
+    @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
