@@ -13,6 +13,7 @@ class AttractionTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     weak var delegate: AttractionTableViewCellDelegate?
+    var placeViewModel: PlaceViewModel?
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -22,12 +23,14 @@ class AttractionTableViewCell: UITableViewCell {
     }
     
     func setup(with viewModel: PlaceViewModel) {
+        self.placeViewModel = viewModel
         mainImageView.image = viewModel.mainImage
         descriptionLabel.text = viewModel.description
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        delegate?.buttonTapped(cell: self)
+        guard let place = placeViewModel else { return }
+        delegate?.buttonTapped(place: place)
     }
     
 }

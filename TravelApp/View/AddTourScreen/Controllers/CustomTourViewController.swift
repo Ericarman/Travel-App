@@ -31,7 +31,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     //MARK: -> TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return placeListViewModel.cellViewModels.count
+        return placeListViewModel.placesViewModels.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -44,8 +44,8 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
             return UITableViewCell()
         }
         
-        cell.setup(with: placeListViewModel.cellViewModels[indexPath.row])
         cell.delegate = self
+        cell.setup(with: placeListViewModel.placesViewModels[indexPath.row])
         return cell
     }
     
@@ -55,7 +55,8 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     
     //MARK: -> AttractionTableViewCellDelegate
     
-    func buttonTapped(cell: AttractionTableViewCell) {
-        placeListViewModel.addPlaceToCollectionView(at: cell)
+    func buttonTapped(place: PlaceViewModel) {
+        placeListViewModel.addPlaceToCollectionView(place: place)
+        selectedPlacesCollectionView.reloadData()
     }
 }

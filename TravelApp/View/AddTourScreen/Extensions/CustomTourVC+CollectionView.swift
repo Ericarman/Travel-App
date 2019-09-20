@@ -21,7 +21,7 @@ extension CustomTourViewController: UICollectionViewDataSource, UICollectionView
             return UICollectionViewCell()
         }
         
-        cell.setup(with: placeListViewModel.cellViewModels[indexPath.row])
+        cell.setup(with: placeListViewModel.selectedPlacesViewModels[indexPath.row])
         return cell
     }
 }

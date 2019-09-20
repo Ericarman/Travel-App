@@ -8,8 +8,13 @@
 
 import UIKit
 
-struct Place {
+struct Place: Equatable {
     let id: String
     var name: String
     var image: UIImage?
+    
+    static func == (lhs: Place, rhs: Place) -> Bool {
+        return lhs.id == rhs.id
+    }
+
 }

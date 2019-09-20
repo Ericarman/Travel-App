@@ -17,7 +17,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        
         toursViewModel.getTours { (tours) in
             self.collectionView.reloadData()
         }

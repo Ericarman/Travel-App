@@ -12,7 +12,5 @@ class EmptyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 class PlaceListViewModel {
     private var customTour = CustomTour()
     
-    var cellViewModels = [PlaceViewModel]()
+    var placesViewModels = [PlaceViewModel]()
     var selectedPlacesViewModels = [PlaceViewModel]()
     
     
@@ -34,21 +34,21 @@ class PlaceListViewModel {
                     let place = Place(id: id, name: name, image: image)
                     let viewModel = PlaceViewModel(place: place)
                     
-                    self.cellViewModels.append(viewModel)
+                    self.placesViewModels.append(viewModel)
                     group.leave()
                 })
             }
             
             group.notify(queue: DispatchQueue.main, execute: {
-                completion(self.cellViewModels)
+                completion(self.placesViewModels)
             })
         }
     }
     
-    func addPlaceToCollectionView(at cell: AttractionTableViewCell) {
+    func addPlaceToCollectionView(place: PlaceViewModel) {
         //TODO: (Eric)
-        if !cellViewModels.isEmpty {
-            //selectedPlacesViewModels.append(cellViewModels[index])
+        if !selectedPlacesViewModels.contains(place) {
+            selectedPlacesViewModels.append(place)
         }
     }
 }
