@@ -21,6 +21,7 @@ class PlaceListViewModel {
             for (id, place) in placesDict {
                 guard let name = place["name"] as? String,
                     let imageURL = place["image"] as? String else { completion(nil); return }
+                print(imageURL)
                 
                 group.enter()
                 ImageDownloader.shared.getImage(from: imageURL, completion: { (data) in

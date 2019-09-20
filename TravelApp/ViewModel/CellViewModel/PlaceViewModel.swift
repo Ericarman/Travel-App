@@ -14,6 +14,6 @@ struct PlaceViewModel {
     
     init(place: Place) {
         self.description = place.name
-        self.mainImage = #imageLiteral(resourceName: "garni")
+        self.mainImage = place.image!
     }
 }
