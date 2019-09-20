@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var customTourTableView: UITableView!
     @IBOutlet weak var selectedPlacesCollectionView: UICollectionView!
@@ -19,6 +19,9 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         customTourTableView.dataSource = self
         customTourTableView.delegate = self
+        
+        selectedPlacesCollectionView.dataSource = self
+        selectedPlacesCollectionView.delegate = self
         
         customTourViewModel.getPlaces { (places) in
             self.customTourTableView.reloadData()
@@ -45,18 +48,12 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
-    //MARK: -> CollectionView
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func addButtonTouched(_ sender: Any) {
+        //TODO: (Eric)
     }
     
 }
