@@ -175,7 +175,7 @@
                                                     <rect key="frame" x="345" y="11" width="22" height="22"/>
                                                     <state key="normal" image="Mask"/>
                                                     <connections>
-                                                        <action selector="addButtonTouched:" destination="aN3-8w-ihH" eventType="touchUpInside" id="ZPQ-rD-oU5"/>
+                                                        <action selector="addButtonTapped:" destination="S0o-on-Qeh" eventType="touchUpInside" id="erP-IF-ag7"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -214,7 +214,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddedPlaces" id="4BP-7W-atZ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddedPlaces" id="4BP-7W-atZ" customClass="SelectedPlacesCollectionViewCell" customModule="TravelApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -232,6 +232,9 @@
                                             <constraint firstItem="kSq-Vb-zZz" firstAttribute="top" secondItem="4BP-7W-atZ" secondAttribute="top" id="kGa-dC-a00"/>
                                             <constraint firstAttribute="trailing" secondItem="kSq-Vb-zZz" secondAttribute="trailing" id="s4D-4p-BnK"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="placeImageView" destination="kSq-Vb-zZz" id="46L-Kn-xqT"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

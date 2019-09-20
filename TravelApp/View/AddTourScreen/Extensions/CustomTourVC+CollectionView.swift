@@ -11,15 +11,17 @@ import UIKit
 extension CustomTourViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     //MARK: -> CollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return placeListViewModel.selectedPlacesViewModels.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddedPlaces", for: indexPath) as? UICollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddedPlaces", for: indexPath) as? SelectedPlacesCollectionViewCell else {
             
             return UICollectionViewCell()
         }
+        
+        cell.setup(with: placeListViewModel.cellViewModels[indexPath.row])
         return cell
     }
 }

@@ -15,10 +15,4 @@ class EmptyViewController: UIViewController {
 
         tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-//        guard let addTourViewController = storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController"), tabBarController!.selectedIndex != 2 else { return }
-//
-//        self.present(addTourViewController, animated: true)
-    }
 }

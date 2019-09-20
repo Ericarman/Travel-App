@@ -28,6 +28,8 @@
 		FE17D7A5232D1C7C0054A389 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D7A4232D1C7C0054A389 /* PlaceViewModel.swift */; };
 		FE2313782332820D003E28F0 /* CustomTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */; };
 		FE23137B2334DBD5003E28F0 /* CustomTourVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23137A2334DBD5003E28F0 /* CustomTourVC+CollectionView.swift */; };
+		FE23137D2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23137C2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift */; };
+		FE2313802334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23137F2334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift */; };
 		FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A7A742323B3BD00517B4E /* HomeViewController.swift */; };
 		FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71BB2E231EC95A003AE340 /* AppDelegate.swift */; };
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		FE17D7A2232CDFBF0054A389 /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
 		FE17D7A4232D1C7C0054A389 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		FE23137A2334DBD5003E28F0 /* CustomTourVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomTourVC+CollectionView.swift"; sourceTree = "<group>"; };
+		FE23137C2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlacesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE23137F2334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		FE3A7A742323B3BD00517B4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FE71BB2B231EC95A003AE340 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71BB2E231EC95A003AE340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +288,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FE23137E2334F7E1003E28F0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE23137F2334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FE71BB22231EC95A003AE340 = {
 			isa = PBXGroup;
 			children = (
@@ -338,8 +350,9 @@
 		FE95EE0F232A378500AA9393 /* AddTourScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FE2313792334DB51003E28F0 /* Extensions */,
+				FE23137E2334F7E1003E28F0 /* Protocols */,
 				FE95EE10232A37B800AA9393 /* Cell */,
+				FE2313792334DB51003E28F0 /* Extensions */,
 				FE95EE11232A37D200AA9393 /* Controllers */,
 			);
 			path = AddTourScreen;
@@ -349,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */,
+				FE23137C2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -484,6 +498,7 @@
 				FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */,
 				FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
+				FE2313802334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE17D7A3232CDFBF0054A389 /* PlaceListViewModel.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
@@ -498,6 +513,7 @@
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
 				05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */,
+				FE23137D2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift in Sources */,
 				FE2313782332820D003E28F0 /* CustomTourViewController.swift in Sources */,
 				FE9551D52331499C00467527 /* TourViewModel.swift in Sources */,
 				05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */,

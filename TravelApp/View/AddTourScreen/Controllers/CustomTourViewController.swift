@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AttractionTableViewCellDelegate {
     
     @IBOutlet weak var customTourTableView: UITableView!
     @IBOutlet weak var selectedPlacesCollectionView: UICollectionView!
     
-    var customTourViewModel = PlaceListViewModel()
+    var placeListViewModel = PlaceListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         selectedPlacesCollectionView.dataSource = self
         selectedPlacesCollectionView.delegate = self
         
-        customTourViewModel.getPlaces { (places) in
+        placeListViewModel.getPlaces { (places) in
             self.customTourTableView.reloadData()
         }
     }
@@ -31,7 +31,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     //MARK: -> TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return customTourViewModel.cellViewModels.count
+        return placeListViewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -44,7 +44,8 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
             return UITableViewCell()
         }
         
-        cell.setup(with: customTourViewModel.cellViewModels[indexPath.row])
+        cell.setup(with: placeListViewModel.cellViewModels[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
@@ -52,8 +53,9 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func addButtonTouched(_ sender: Any) {
-        //TODO: (Eric)
-    }
+    //MARK: -> AttractionTableViewCellDelegate
     
+    func buttonTapped(cell: AttractionTableViewCell) {
+        placeListViewModel.addPlaceToCollectionView(at: cell)
+    }
 }
