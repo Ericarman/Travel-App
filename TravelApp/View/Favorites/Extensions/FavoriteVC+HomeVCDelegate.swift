@@ -19,7 +19,6 @@ extension FavoritesViewController: HomeViewControllerDelegate {
         for (index, element) in self.toursViewModel.tours.enumerated() {
             if element == tour {
                 self.toursViewModel.tours.remove(at: index)
-                self.favoritesCollectionView.reloadData()
                 break
             }
         }
