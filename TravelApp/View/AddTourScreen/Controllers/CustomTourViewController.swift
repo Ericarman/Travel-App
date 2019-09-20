@@ -8,18 +8,22 @@
 
 import UIKit
 
-class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AttractionTableViewCellDelegate {
     
     @IBOutlet weak var customTourTableView: UITableView!
+    @IBOutlet weak var selectedPlacesCollectionView: UICollectionView!
     
-    var customTourViewModel = PlaceListViewModel()
+    var placeListViewModel = PlaceListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         customTourTableView.dataSource = self
         customTourTableView.delegate = self
         
-        customTourViewModel.getPlaces { (places) in
+        selectedPlacesCollectionView.dataSource = self
+        selectedPlacesCollectionView.delegate = self
+        
+        placeListViewModel.getPlaces { (places) in
             self.customTourTableView.reloadData()
         }
     }
@@ -27,16 +31,32 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
     //MARK: -> TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO: (Eric)
-        return customTourViewModel.cellViewModels.count
+        return placeListViewModel.placesViewModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "attraction", for: indexPath) as? AttractionTableViewCell else {
             return UITableViewCell()
         }
-        //TODO: (Eric)
-        cell.setup(with: customTourViewModel.cellViewModels[indexPath.row])
+        
+        cell.delegate = self
+        cell.setup(with: placeListViewModel.placesViewModels[indexPath.row])
         return cell
+    }
+    
+    @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK: -> AttractionTableViewCellDelegate
+    
+    func buttonTapped(place: PlaceViewModel) {
+        placeListViewModel.addPlaceToCollectionView(place: place)
+        selectedPlacesCollectionView.reloadData()
     }
 }
