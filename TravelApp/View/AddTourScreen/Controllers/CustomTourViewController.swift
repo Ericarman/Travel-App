@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CustomTourViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var customTourTableView: UITableView!
+    @IBOutlet weak var selectedPlacesCollectionView: UICollectionView!
     
     var customTourViewModel = PlaceListViewModel()
     
@@ -42,6 +43,16 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.setup(with: customTourViewModel.cellViewModels[indexPath.row])
         return cell
+    }
+    
+    //MARK: -> CollectionView
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
     
     @IBAction func cancelTapped(_ sender: Any) {
