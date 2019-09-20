@@ -16,12 +16,14 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tourNameLabel: UILabel!
     @IBOutlet weak var favoriteButtonView: UIView!
     @IBOutlet weak var favoriteButtonImageView: UIImageView!
+    @IBOutlet weak var tourImageView: UIImageView!
     
     weak var viewModel: TourViewModel!
     
     func setup(with viewModel: TourViewModel) {
         self.viewModel = viewModel
         tourNameLabel.text = viewModel.tourName
+        tourImageView.image = viewModel.tourImage
         togglefavoriteImage()
         favoriteButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(favoriteButtonTapped)))
     }
