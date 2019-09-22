@@ -19,10 +19,10 @@ class TriangleButton: UIButton {
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
         path.close()
         
-        UIColor.orange.setFill()
+        #colorLiteral(red: 0.4862745098, green: 0.7019607843, blue: 0.2588235294, alpha: 1).setFill()
         path.fill()
         
-        UIColor.purple.setStroke()
+        UIColor.green.setStroke()
         path.stroke()
     }
 }
