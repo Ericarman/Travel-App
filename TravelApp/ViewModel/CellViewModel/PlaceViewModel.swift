@@ -31,4 +31,8 @@ class PlaceViewModel: Equatable {
     static func == (lhs: PlaceViewModel, rhs: PlaceViewModel) -> Bool {
         return lhs.place.id == rhs.place.id
     }
+    
+    var placeName: String {
+        return self.place.name
+    }
 }

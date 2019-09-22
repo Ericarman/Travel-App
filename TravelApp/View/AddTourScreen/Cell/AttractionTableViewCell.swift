@@ -24,8 +24,12 @@ class AttractionTableViewCell: UITableViewCell {
     
     func setup(with viewModel: PlaceViewModel) {
         self.placeViewModel = viewModel
-//        mainImageView.image = viewModel.mainImage
-//        descriptionLabel.text = viewModel.description
+        descriptionLabel.text = viewModel.placeName
+        placeViewModel?.getImage(completion: { (image) in
+            DispatchQueue.main.async {
+                self.mainImageView.image = image
+            }
+        })
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
