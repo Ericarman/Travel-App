@@ -23,7 +23,17 @@ class HomeCollectionViewCell: UICollectionViewCell {
     func setup(with viewModel: TourViewModel) {
         self.viewModel = viewModel
         tourNameLabel.text = viewModel.tourName
-        tourImageView.image = viewModel.tourImage
+
+        viewModel.tourPlaces.forEach { (place) in
+            
+            place.getImage(completion: { (image) in
+                DispatchQueue.main.async {
+                    self.tourImageView.image = image
+                }
+            })
+        
+        }
+
         togglefavoriteImage()
         favoriteButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(favoriteButtonTapped)))
     }

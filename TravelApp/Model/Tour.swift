@@ -13,13 +13,11 @@ struct Tour: Equatable {
     var id: String
     var name: String
     var isFavorite: Bool
-    var places: [Place]
     
-    init(id: String, name: String, isFavorite: Bool, places: [Place]) {
+    init(id: String, name: String, isFavorite: Bool) {
         self.id = id
         self.name = name
         self.isFavorite = isFavorite
-        self.places = places
     }
     
     static func == (lhs: Tour, rhs: Tour) -> Bool {

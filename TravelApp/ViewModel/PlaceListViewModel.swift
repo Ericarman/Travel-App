@@ -27,16 +27,16 @@ class PlaceListViewModel {
                 print(imageURL)
                 
                 group.enter()
-                ImageDownloader.shared.getImage(from: imageURL, completion: { (data) in
-                    guard let data = data else { completion(nil); return }
-                    
-                    let image = UIImage(data: data)!
-                    let place = Place(id: id, name: name, image: image)
-                    let viewModel = PlaceViewModel(place: place)
-                    
-                    self.placesViewModels.append(viewModel)
-                    group.leave()
-                })
+//                ImageDownloader.shared.getImage(from: imageURL, completion: { (data) in
+//                    guard let data = data else { completion(nil); return }
+//                    
+//                    let image = UIImage(data: data)!
+//                    let place = Place(id: id, name: name, imageUrl: image)
+//                    let viewModel = PlaceViewModel(place: place)
+//                    
+//                    self.placesViewModels.append(viewModel)
+//                    group.leave()
+//                })
             }
             
             group.notify(queue: DispatchQueue.main, execute: {

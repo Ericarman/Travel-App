@@ -17,42 +17,19 @@ class TourListViewModel {
             if let querySnapshot = querySnapshot {
                 let group = DispatchGroup()
                 for document in querySnapshot {
-                    var tour: Tour!
-                    let data = document.data()
-                    let name = data["name"] as! String
-                    let isFavorite = data["isFavorite"] as! Bool
-                    
                     group.enter()
                     PlaceListDownloader.shared.getTourPlaces(from: document.reference, completion: { (placeList) in
                         guard let placeList = placeList else {
                             completion(nil)
                             return
                         }
-                        var places = [Place]()
-                        let group2 = DispatchGroup()
-                        for (id, place) in placeList {
-                            guard let name = place["name"] as? String,
-                                let imageUrl = place["image"] as? String else {
-                                return
-                            }
-                            group2.enter()
-                            ImageDownloader.shared.getImage(from: imageUrl, completion: { (data) in
-                                guard let data = data else {
-                                    completion(nil)
-                                    return
-                                }
-                                //TODO: load image
-                                let image = UIImage(data: data)
-                                let place = Place(id: id, name: name, image: image!)
-                                places.append(place)
-                                group2.leave()
-                            })
+                        
+                        if let tour = TourViewModel(snapshot: document, places: placeList) {
+                            self.tours.append(tour)
+                        } else {
+                            completion(nil)
                         }
-                        group2.notify(queue: DispatchQueue.main) {
-                            tour = Tour(id: document.documentID, name: name, isFavorite: isFavorite, places: places)
-                            self.tours.append(TourViewModel(tour: tour))
-                            group.leave()
-                        }
+                        group.leave()
                     })
                 }
                 group.notify(queue: DispatchQueue.main) {
