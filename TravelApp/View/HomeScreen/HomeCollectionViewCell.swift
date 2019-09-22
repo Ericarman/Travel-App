@@ -17,6 +17,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var favoriteButtonView: UIView!
     @IBOutlet weak var favoriteButtonImageView: UIImageView!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
+    @IBOutlet weak var pageControll: UIPageControl!
     
     weak var viewModel: TourViewModel!
     

@@ -110,12 +110,17 @@
                                                         <constraint firstItem="pRe-Z8-pb3" firstAttribute="centerY" secondItem="0n5-Nq-DER" secondAttribute="centerY" id="xNp-Lo-chW"/>
                                                     </constraints>
                                                 </view>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1V9-aq-lpU">
+                                                    <rect key="frame" x="130.66666666666666" y="87" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0n5-Nq-DER" secondAttribute="trailing" id="CGf-VS-RxI"/>
                                             <constraint firstItem="0n5-Nq-DER" firstAttribute="top" secondItem="i9Y-Lu-j9m" secondAttribute="top" id="CSr-UY-n1k"/>
+                                            <constraint firstItem="1V9-aq-lpU" firstAttribute="bottom" secondItem="jLy-C9-X2W" secondAttribute="bottom" id="Jh3-TI-zsc"/>
+                                            <constraint firstItem="1V9-aq-lpU" firstAttribute="centerX" secondItem="i9Y-Lu-j9m" secondAttribute="centerX" id="VMo-GD-l4j"/>
                                             <constraint firstItem="Qta-Ba-cB3" firstAttribute="leading" secondItem="i9Y-Lu-j9m" secondAttribute="leading" constant="20" id="ZjR-rw-eiq"/>
                                             <constraint firstItem="jLy-C9-X2W" firstAttribute="top" secondItem="i9Y-Lu-j9m" secondAttribute="top" id="doN-gO-taK"/>
                                             <constraint firstItem="Qta-Ba-cB3" firstAttribute="top" secondItem="jLy-C9-X2W" secondAttribute="bottom" id="vDv-Hs-s3r"/>
@@ -127,6 +132,7 @@
                                             <outlet property="favoriteButtonImageView" destination="pRe-Z8-pb3" id="A7A-0D-O1b"/>
                                             <outlet property="favoriteButtonView" destination="0n5-Nq-DER" id="ioM-3x-hQc"/>
                                             <outlet property="imagesCollectionView" destination="jLy-C9-X2W" id="fTK-Re-thd"/>
+                                            <outlet property="pageControll" destination="1V9-aq-lpU" id="KPg-dc-fRg"/>
                                             <outlet property="tourNameLabel" destination="Qta-Ba-cB3" id="mBh-hH-DkE"/>
                                         </connections>
                                     </collectionViewCell>
@@ -221,11 +227,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="2ji-pR-hYr" id="HxD-nQ-83C"/>
                                             <outlet property="mainImageView" destination="6MZ-6u-TMr" id="zYV-sC-qQa"/>
+                                            <outlet property="placeNameLabel" destination="2ji-pR-hYr" id="ceU-dc-txc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aN3-8w-ihH" id="cmW-8a-7xZ"/>
+                                    <outlet property="delegate" destination="aN3-8w-ihH" id="jOd-lg-pUu"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="D13-Gv-6Kd">
                                 <rect key="frame" x="0.0" y="276.66666666666669" width="375" height="56"/>
@@ -458,6 +468,9 @@
                                                         <constraint firstItem="aia-eC-yx1" firstAttribute="centerY" secondItem="fdJ-QQ-Cv2" secondAttribute="centerY" id="ybm-CQ-VGS"/>
                                                     </constraints>
                                                 </view>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-i3-fnh">
+                                                    <rect key="frame" x="130.66666666666666" y="82" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -467,7 +480,9 @@
                                             <constraint firstAttribute="trailing" secondItem="fdJ-QQ-Cv2" secondAttribute="trailing" id="IjT-4Q-J5I"/>
                                             <constraint firstAttribute="bottom" secondItem="VBt-23-YzH" secondAttribute="bottom" constant="5" id="Ilo-yM-954"/>
                                             <constraint firstItem="gM9-wI-QA2" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" id="W0P-uu-GWF"/>
+                                            <constraint firstItem="GqE-i3-fnh" firstAttribute="centerX" secondItem="rUh-4L-sll" secondAttribute="centerX" id="ha2-na-P0a"/>
                                             <constraint firstItem="VBt-23-YzH" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" constant="20" id="iaJ-mm-pA4"/>
+                                            <constraint firstItem="GqE-i3-fnh" firstAttribute="bottom" secondItem="gM9-wI-QA2" secondAttribute="bottom" id="ltC-gD-n13"/>
                                             <constraint firstItem="fdJ-QQ-Cv2" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="wJG-lZ-8jF"/>
                                             <constraint firstItem="gM9-wI-QA2" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="yHA-pZ-zmh"/>
                                         </constraints>
@@ -475,6 +490,7 @@
                                             <outlet property="favoriteButtonImageView" destination="aia-eC-yx1" id="fjX-SX-1tF"/>
                                             <outlet property="favoriteButtonView" destination="fdJ-QQ-Cv2" id="DwR-gf-jUE"/>
                                             <outlet property="imagesCollectionView" destination="gM9-wI-QA2" id="kBP-Tj-yQ5"/>
+                                            <outlet property="pageControll" destination="GqE-i3-fnh" id="RX6-fH-2Y9"/>
                                             <outlet property="tourNameLabel" destination="VBt-23-YzH" id="F9z-1i-LsS"/>
                                         </connections>
                                     </collectionViewCell>

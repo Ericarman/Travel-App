@@ -10,21 +10,20 @@ import UIKit
 
 class AttractionTableViewCell: UITableViewCell {
     @IBOutlet weak var mainImageView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var placeNameLabel: UILabel!
     
     weak var delegate: AttractionTableViewCellDelegate?
     var placeViewModel: PlaceViewModel?
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        mainImageView = nil
-        descriptionLabel = nil
+//        mainImageView = nil
         delegate = nil
     }
     
     func setup(with viewModel: PlaceViewModel) {
         self.placeViewModel = viewModel
-        descriptionLabel.text = viewModel.placeName
+        placeNameLabel.text = viewModel.placeName
         placeViewModel?.getImage(completion: { (image) in
             DispatchQueue.main.async {
                 self.mainImageView.image = image
