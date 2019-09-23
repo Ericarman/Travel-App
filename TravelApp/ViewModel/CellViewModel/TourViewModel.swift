@@ -7,12 +7,30 @@
 //
 
 import UIKit
+import Firebase
 
 class TourViewModel: Equatable {
     private var tour: Tour
+    private var places: [PlaceViewModel]
     
-    init(tour: Tour) {
-        self.tour = tour
+    init?(snapshot: QueryDocumentSnapshot, places: [String : [String : Any]]) {
+        let data = snapshot.data()
+        let id = snapshot.documentID
+        let name = data["name"] as! String
+        let isFavorite = data["isFavorite"] as! Bool
+        
+        var placeList = [PlaceViewModel]()
+        for (id, place) in places {
+            guard let name = place["name"] as? String,
+                let imageUrl = place["image"] as? String else {
+                    return nil
+            }
+            let place = PlaceViewModel(place: Place(id: id, name: name, imageUrl: imageUrl))
+            placeList.append(place)
+        }
+        self.tour = Tour(id: id, name: name, isFavorite: isFavorite)
+        self.places = placeList
+        
     }
     
     var id: String {
@@ -23,13 +41,9 @@ class TourViewModel: Equatable {
         return self.tour.name
     }
     
-    var tourImage: UIImage {
-        return self.tour.places[0].image!
-    }
-    
-    var tourPlaces: [Place] {
+    var tourPlaces: [PlaceViewModel] {
         get {
-            return self.tour.places
+            return self.places
         }
     }
     

@@ -13,6 +13,10 @@ class SelectedPlacesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var placeImageView: UIImageView!
     
     func setup(with viewModel: PlaceViewModel) {
-        placeImageView.image = viewModel.mainImage
+        viewModel.getImage { (image) in
+            DispatchQueue.main.async {
+                self.placeImageView.image = image
+            }
+        }
     }
 }
