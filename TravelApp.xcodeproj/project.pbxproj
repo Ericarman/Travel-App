@@ -46,6 +46,7 @@
 		FE9551D52331499C00467527 /* TourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9551D42331499C00467527 /* TourViewModel.swift */; };
 		FE9551D7233239F800467527 /* TourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* TourListViewModel.swift */; };
 		FEC00A31233751A9006B86CE /* TriangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC00A30233751A9006B86CE /* TriangleButton.swift */; };
+		FEC00A3523387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC00A3423387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		FE9551D42331499C00467527 /* TourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewModel.swift; sourceTree = "<group>"; };
 		FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTourViewController.swift; sourceTree = "<group>"; };
 		FEC00A30233751A9006B86CE /* TriangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleButton.swift; sourceTree = "<group>"; };
+		FEC00A3423387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlacesCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FE23137F2334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift */,
+				FEC00A3423387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */,
 				FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */,
 				FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */,
+				FEC00A3523387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift in Sources */,
 				0512BB9323267FFA0025951D /* Registration.swift in Sources */,
 				FE2313802334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
