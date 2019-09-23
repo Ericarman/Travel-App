@@ -9,7 +9,7 @@
 import UIKit
 
 class PlaceViewModel: Equatable {
-    private let place: Place
+    let place: Place
     private var image: UIImage?
    
     init(place: Place) {

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8tu-8w-InR">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8tu-8w-InR">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -193,7 +191,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S0o-on-Qeh" id="xV6-0V-oat">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="205.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6MZ-6u-TMr">
@@ -266,17 +264,26 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garni" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-Vb-zZz">
                                                     <rect key="frame" x="0.0" y="0.0" width="77" height="68"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-T2-J5a">
-                                                    <rect key="frame" x="61" y="-1" width="16" height="10"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                                    <state key="normal" title="a"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-T2-J5a" customClass="TriangleButton" customModule="TravelApp" customModuleProvider="target">
+                                                    <rect key="frame" x="57" y="0.0" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="vC4-T2-J5a" secondAttribute="height" multiplier="1:1" id="Alw-4Z-5dy"/>
+                                                        <constraint firstAttribute="width" constant="20" id="cKG-tL-qXI"/>
+                                                    </constraints>
+                                                    <state key="normal" title="-">
+                                                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="removeButtonTapped:" destination="4BP-7W-atZ" eventType="touchUpInside" id="bdH-H5-RZO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vC4-T2-J5a" secondAttribute="trailing" id="8zE-3A-hCi"/>
                                             <constraint firstAttribute="bottom" secondItem="kSq-Vb-zZz" secondAttribute="bottom" id="Fuz-Ro-cjq"/>
                                             <constraint firstItem="kSq-Vb-zZz" firstAttribute="leading" secondItem="4BP-7W-atZ" secondAttribute="leading" id="IDc-jc-4k6"/>
+                                            <constraint firstItem="vC4-T2-J5a" firstAttribute="top" secondItem="4BP-7W-atZ" secondAttribute="top" id="XVc-aW-QfC"/>
                                             <constraint firstItem="kSq-Vb-zZz" firstAttribute="top" secondItem="4BP-7W-atZ" secondAttribute="top" id="kGa-dC-a00"/>
                                             <constraint firstAttribute="trailing" secondItem="kSq-Vb-zZz" secondAttribute="trailing" id="s4D-4p-BnK"/>
                                         </constraints>
@@ -335,7 +342,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3M3-OE-jH5" id="DbA-5X-inz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124.66666666666667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-iV-orp">

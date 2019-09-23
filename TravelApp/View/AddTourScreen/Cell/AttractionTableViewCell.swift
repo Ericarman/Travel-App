@@ -17,7 +17,6 @@ class AttractionTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-//        mainImageView = nil
         delegate = nil
     }
     
