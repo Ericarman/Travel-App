@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 class TriangleButton: UIButton {
-
+    
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath()
         
@@ -24,5 +24,8 @@ class TriangleButton: UIButton {
         
         #colorLiteral(red: 0.4862745098, green: 0.7019607843, blue: 0.2588235294, alpha: 1).setStroke()
         path.stroke()
+        
+        contentHorizontalAlignment = .right
+        contentVerticalAlignment = .top
     }
 }
