@@ -42,7 +42,7 @@ class PlaceListViewModel {
     
     func removePlaceFromCollectionView(place: PlaceViewModel) {
         for index in 0..<selectedPlacesViewModels.count {
-            if place.id == selectedPlacesViewModels[index].id {
+            if place.place.id == selectedPlacesViewModels[index].place.id {
                 selectedPlacesViewModels.remove(at: index)
                 break
             }
