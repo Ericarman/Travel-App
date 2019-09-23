@@ -17,10 +17,17 @@
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05A83CA52337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */; };
 		05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */; };
-		05A83CAF2338B9B700E3E1F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CAE2338B9B700E3E1F5 /* ViewController.swift */; };
-		05A83CB22338B9B700E3E1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB02338B9B700E3E1F5 /* Main.storyboard */; };
+		05A83CAF2338B9B700E3E1F5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CAE2338B9B700E3E1F5 /* SignInViewController.swift */; };
+		05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */; };
 		05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */; };
 		05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */; };
+		05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
+		05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */; };
+		05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */; };
+		05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */; };
+		05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */; };
+		05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */; };
+		05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
@@ -70,11 +77,17 @@
 		05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourPlacesCollectionViewCell.swift; sourceTree = "<group>"; };
 		05A83CAA2338B9B600E3E1F5 /* TravelApp Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelApp Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05A83CAE2338B9B700E3E1F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05A83CB12338B9B700E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05A83CAE2338B9B700E3E1F5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		05A83CB12338B9B700E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DriverMain.storyboard; sourceTree = "<group>"; };
 		05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A83CB62338B9BB00E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A83CB82338B9BB00E3E1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondCollectionViewCell.xib; sourceTree = "<group>"; };
+		05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* TourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -270,14 +283,68 @@
 		05A83CAB2338B9B700E3E1F5 /* TravelApp Driver */ = {
 			isa = PBXGroup;
 			children = (
-				05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */,
-				05A83CAE2338B9B700E3E1F5 /* ViewController.swift */,
-				05A83CB02338B9B700E3E1F5 /* Main.storyboard */,
-				05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */,
-				05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */,
+				05A83CBD2338BD8B00E3E1F5 /* View */,
+				05A83CBE2338BD9200E3E1F5 /* ViewModel */,
+				05A83CBF2338BD9A00E3E1F5 /* Storyboards */,
+				05A83CC02338BDA500E3E1F5 /* Resourses */,
 				05A83CB82338B9BB00E3E1F5 /* Info.plist */,
 			);
 			path = "TravelApp Driver";
+			sourceTree = "<group>";
+		};
+		05A83CBD2338BD8B00E3E1F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC12338C62B00E3E1F5 /* SignUp */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05A83CBE2338BD9200E3E1F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05A83CBF2338BD9A00E3E1F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */,
+				05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		05A83CC02338BDA500E3E1F5 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */,
+				05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		05A83CC12338C62B00E3E1F5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC22338C63600E3E1F5 /* Cell */,
+				05A83CAE2338B9B700E3E1F5 /* SignInViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		05A83CC22338C63600E3E1F5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */,
+				05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */,
+				05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */,
+				05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */,
+				05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */,
+				05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		05D108F32329675E0098E286 /* Cell */ = {
@@ -496,7 +563,11 @@
 			files = (
 				05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */,
 				05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */,
-				05A83CB22338B9B700E3E1F5 /* Main.storyboard in Resources */,
+				05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */,
+				05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */,
+				05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */,
+				05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */,
+				05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +632,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A83CAF2338B9B700E3E1F5 /* ViewController.swift in Sources */,
+				05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */,
+				05A83CAF2338B9B700E3E1F5 /* SignInViewController.swift in Sources */,
+				05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */,
+				05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */,
 				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,12 +683,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		05A83CB02338B9B700E3E1F5 /* Main.storyboard */ = {
+		05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				05A83CB12338B9B700E3E1F5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = DriverMain.storyboard;
 			sourceTree = "<group>";
 		};
 		05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */ = {
