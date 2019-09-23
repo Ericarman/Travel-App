@@ -16,11 +16,24 @@
 		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05A83CA52337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */; };
+		05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */; };
+		05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */; };
+		05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */; };
+		05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */; };
+		05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
+		05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */; };
+		05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */; };
+		05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */; };
+		05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */; };
+		05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */; };
+		05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
 		05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FF232A881C0098E286 /* PlaceDownloader.swift */; };
+		05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */; };
+		05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6299A2338E3E20048B17C /* SignUpViewController.swift */; };
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
 		FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */; };
 		FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */; };
@@ -65,12 +78,26 @@
 		05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteVC+HomeVCDelegate.swift"; sourceTree = "<group>"; };
 		05A5F7E3232EED3200834CE3 /* FavoriteVC+HomeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteVC+HomeCollectionViewCellDelegate.swift"; sourceTree = "<group>"; };
 		05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourPlacesCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CAA2338B9B600E3E1F5 /* TravelApp Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelApp Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05A83CB12338B9B700E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DriverMain.storyboard; sourceTree = "<group>"; };
+		05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05A83CB62338B9BB00E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05A83CB82338B9BB00E3E1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondCollectionViewCell.xib; sourceTree = "<group>"; };
+		05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* TourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		05D108FA23296CDA0098E286 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		05D108FD23296E360098E286 /* ToursDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDownloader.swift; sourceTree = "<group>"; };
 		05D108FF232A881C0098E286 /* PlaceDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDownloader.swift; sourceTree = "<group>"; };
+		05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+CollectionViewController.swift"; sourceTree = "<group>"; };
+		05F6299A2338E3E20048B17C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +126,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05A83CA72338B9B600E3E1F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE71BB28231EC95A003AE340 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +286,74 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		05A83CAB2338B9B700E3E1F5 /* TravelApp Driver */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CBD2338BD8B00E3E1F5 /* View */,
+				05A83CBE2338BD9200E3E1F5 /* ViewModel */,
+				05A83CBF2338BD9A00E3E1F5 /* Storyboards */,
+				05A83CC02338BDA500E3E1F5 /* Resourses */,
+				05A83CB82338B9BB00E3E1F5 /* Info.plist */,
+			);
+			path = "TravelApp Driver";
+			sourceTree = "<group>";
+		};
+		05A83CBD2338BD8B00E3E1F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC12338C62B00E3E1F5 /* SignUp */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05A83CBE2338BD9200E3E1F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05A83CBF2338BD9A00E3E1F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */,
+				05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		05A83CC02338BDA500E3E1F5 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CAC2338B9B700E3E1F5 /* AppDelegate.swift */,
+				05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		05A83CC12338C62B00E3E1F5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC22338C63600E3E1F5 /* Cell */,
+				05F629962338DD000048B17C /* Controller */,
+				05F629972338DD110048B17C /* Extension */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		05A83CC22338C63600E3E1F5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */,
+				05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */,
+				05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */,
+				05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */,
+				05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */,
+				05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		05D108F32329675E0098E286 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +361,22 @@
 				05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		05F629962338DD000048B17C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05F6299A2338E3E20048B17C /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05F629972338DD110048B17C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		369608D8D31B36C4CF83282D /* Frameworks */ = {
@@ -308,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				FE71BB2D231EC95A003AE340 /* TravelApp */,
+				05A83CAB2338B9B700E3E1F5 /* TravelApp Driver */,
 				FE71BB2C231EC95A003AE340 /* Products */,
 				B77CE80DC6538C467050BE41 /* Pods */,
 				369608D8D31B36C4CF83282D /* Frameworks */,
@@ -318,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				FE71BB2B231EC95A003AE340 /* TravelApp.app */,
+				05A83CAA2338B9B600E3E1F5 /* TravelApp Driver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -396,6 +516,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		05A83CA92338B9B600E3E1F5 /* TravelApp Driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A83CBB2338B9BB00E3E1F5 /* Build configuration list for PBXNativeTarget "TravelApp Driver" */;
+			buildPhases = (
+				05A83CA62338B9B600E3E1F5 /* Sources */,
+				05A83CA72338B9B600E3E1F5 /* Frameworks */,
+				05A83CA82338B9B600E3E1F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TravelApp Driver";
+			productName = "TravelApp Driver";
+			productReference = 05A83CAA2338B9B600E3E1F5 /* TravelApp Driver.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FE71BB2A231EC95A003AE340 /* TravelApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE71BB3D231EC95B003AE340 /* Build configuration list for PBXNativeTarget "TravelApp" */;
@@ -425,6 +562,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Eric Hovhannisyan";
 				TargetAttributes = {
+					05A83CA92338B9B600E3E1F5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					FE71BB2A231EC95A003AE340 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -444,11 +584,26 @@
 			projectRoot = "";
 			targets = (
 				FE71BB2A231EC95A003AE340 /* TravelApp */,
+				05A83CA92338B9B600E3E1F5 /* TravelApp Driver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05A83CA82338B9B600E3E1F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */,
+				05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */,
+				05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */,
+				05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */,
+				05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */,
+				05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */,
+				05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE71BB29231EC95A003AE340 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,6 +661,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05A83CA62338B9B600E3E1F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */,
+				05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */,
+				05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */,
+				05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */,
+				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
+				05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE71BB27231EC95A003AE340 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +719,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05A83CB12338B9B700E3E1F5 /* Base */,
+			);
+			name = DriverMain.storyboard;
+			sourceTree = "<group>";
+		};
+		05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05A83CB62338B9BB00E3E1F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		FE71BB32231EC95A003AE340 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -570,6 +754,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		05A83CB92338B9BB00E3E1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD56F4Y23U;
+				INFOPLIST_FILE = "TravelApp Driver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05A83CBA2338B9BB00E3E1F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD56F4Y23U;
+				INFOPLIST_FILE = "TravelApp Driver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FE71BB3B231EC95B003AE340 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -729,6 +949,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05A83CBB2338B9BB00E3E1F5 /* Build configuration list for PBXNativeTarget "TravelApp Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A83CB92338B9BB00E3E1F5 /* Debug */,
+				05A83CBA2338B9BB00E3E1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FE71BB26231EC95A003AE340 /* Build configuration list for PBXProject "TravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
