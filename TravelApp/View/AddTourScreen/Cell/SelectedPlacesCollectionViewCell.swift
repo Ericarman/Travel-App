@@ -20,7 +20,12 @@ class SelectedPlacesCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with viewModel: PlaceViewModel) {
-        placeImageView.image = viewModel.mainImage
+        viewModel.getImage { (image) in
+            DispatchQueue.main.async {
+                self.placeImageView.image = image
+            }
+        }
+        
         placeViewModel = viewModel
     }
     

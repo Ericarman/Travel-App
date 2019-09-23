@@ -55,9 +55,41 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="toO-hQ-2lh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
-                                                </imageView>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jLy-C9-X2W">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="124"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pll-De-mk0">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeImageCell" id="aFc-NC-whh" customClass="TourPlacesCollectionViewCell" customModule="TravelApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jRf-0q-Irt">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="jRf-0q-Irt" secondAttribute="bottom" id="0E2-oB-qc7"/>
+                                                                <constraint firstAttribute="trailing" secondItem="jRf-0q-Irt" secondAttribute="trailing" id="4o2-c4-tMx"/>
+                                                                <constraint firstItem="jRf-0q-Irt" firstAttribute="leading" secondItem="aFc-NC-whh" secondAttribute="leading" id="aUK-yG-9SA"/>
+                                                                <constraint firstItem="jRf-0q-Irt" firstAttribute="top" secondItem="aFc-NC-whh" secondAttribute="top" id="sza-wB-EiB"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="tourImageView" destination="jRf-0q-Irt" id="rfF-iC-5QV"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n5-Nq-DER">
                                                     <rect key="frame" x="260" y="0.0" width="40" height="40"/>
                                                     <subviews>
@@ -76,23 +108,29 @@
                                                         <constraint firstItem="pRe-Z8-pb3" firstAttribute="centerY" secondItem="0n5-Nq-DER" secondAttribute="centerY" id="xNp-Lo-chW"/>
                                                     </constraints>
                                                 </view>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1V9-aq-lpU">
+                                                    <rect key="frame" x="130.66666666666666" y="87" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="toO-hQ-2lh" firstAttribute="top" secondItem="i9Y-Lu-j9m" secondAttribute="top" id="6ge-4f-qkz"/>
                                             <constraint firstAttribute="trailing" secondItem="0n5-Nq-DER" secondAttribute="trailing" id="CGf-VS-RxI"/>
                                             <constraint firstItem="0n5-Nq-DER" firstAttribute="top" secondItem="i9Y-Lu-j9m" secondAttribute="top" id="CSr-UY-n1k"/>
-                                            <constraint firstItem="Qta-Ba-cB3" firstAttribute="top" secondItem="toO-hQ-2lh" secondAttribute="bottom" constant="4" id="FJf-oU-jaw"/>
-                                            <constraint firstItem="toO-hQ-2lh" firstAttribute="leading" secondItem="i9Y-Lu-j9m" secondAttribute="leading" id="H3W-rs-lT0"/>
+                                            <constraint firstItem="1V9-aq-lpU" firstAttribute="bottom" secondItem="jLy-C9-X2W" secondAttribute="bottom" id="Jh3-TI-zsc"/>
+                                            <constraint firstItem="1V9-aq-lpU" firstAttribute="centerX" secondItem="i9Y-Lu-j9m" secondAttribute="centerX" id="VMo-GD-l4j"/>
                                             <constraint firstItem="Qta-Ba-cB3" firstAttribute="leading" secondItem="i9Y-Lu-j9m" secondAttribute="leading" constant="20" id="ZjR-rw-eiq"/>
-                                            <constraint firstAttribute="trailing" secondItem="toO-hQ-2lh" secondAttribute="trailing" id="cpl-6j-q8m"/>
-                                            <constraint firstAttribute="bottom" secondItem="toO-hQ-2lh" secondAttribute="bottom" constant="30" id="zGX-6t-WDO"/>
+                                            <constraint firstItem="jLy-C9-X2W" firstAttribute="top" secondItem="i9Y-Lu-j9m" secondAttribute="top" id="doN-gO-taK"/>
+                                            <constraint firstItem="Qta-Ba-cB3" firstAttribute="top" secondItem="jLy-C9-X2W" secondAttribute="bottom" id="vDv-Hs-s3r"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qta-Ba-cB3" secondAttribute="bottom" constant="5" id="xed-Fd-cdb"/>
+                                            <constraint firstAttribute="trailing" secondItem="jLy-C9-X2W" secondAttribute="trailing" id="yai-Hh-RqW"/>
+                                            <constraint firstItem="jLy-C9-X2W" firstAttribute="leading" secondItem="i9Y-Lu-j9m" secondAttribute="leading" id="z7d-L5-GcN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="favoriteButtonImageView" destination="pRe-Z8-pb3" id="A7A-0D-O1b"/>
                                             <outlet property="favoriteButtonView" destination="0n5-Nq-DER" id="ioM-3x-hQc"/>
-                                            <outlet property="tourImageView" destination="toO-hQ-2lh" id="MfQ-jP-TRa"/>
+                                            <outlet property="imagesCollectionView" destination="jLy-C9-X2W" id="fTK-Re-thd"/>
+                                            <outlet property="pageControll" destination="1V9-aq-lpU" id="KPg-dc-fRg"/>
                                             <outlet property="tourNameLabel" destination="Qta-Ba-cB3" id="mBh-hH-DkE"/>
                                         </connections>
                                     </collectionViewCell>
@@ -119,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fv3-a5-XMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3906" y="260"/>
+            <point key="canvasLocation" x="3904.8000000000002" y="259.35960591133005"/>
         </scene>
         <!--Add-->
         <scene sceneID="N3o-8u-Mhw">
@@ -187,11 +225,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="2ji-pR-hYr" id="HxD-nQ-83C"/>
                                             <outlet property="mainImageView" destination="6MZ-6u-TMr" id="zYV-sC-qQa"/>
+                                            <outlet property="placeNameLabel" destination="2ji-pR-hYr" id="ceU-dc-txc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aN3-8w-ihH" id="cmW-8a-7xZ"/>
+                                    <outlet property="delegate" destination="aN3-8w-ihH" id="jOd-lg-pUu"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="D13-Gv-6Kd">
                                 <rect key="frame" x="0.0" y="276.66666666666669" width="375" height="56"/>
@@ -377,9 +419,45 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-ZY-Fvi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
-                                                </imageView>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-wI-QA2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="119"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="AKd-lf-v45">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeImageCell" id="xya-8w-gmd" customClass="TourPlacesCollectionViewCell" customModule="TravelApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z61-oK-fmf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstItem="Z61-oK-fmf" firstAttribute="top" secondItem="xya-8w-gmd" secondAttribute="top" id="F69-Sl-0lo"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Z61-oK-fmf" secondAttribute="trailing" id="QL0-3P-lMs"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Z61-oK-fmf" secondAttribute="bottom" id="n36-Kd-Kh7"/>
+                                                                <constraint firstItem="Z61-oK-fmf" firstAttribute="leading" secondItem="xya-8w-gmd" secondAttribute="leading" id="wCf-3U-Njn"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="tourImageView" destination="Z61-oK-fmf" id="2Cq-xs-3d4"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="rUh-4L-sll" id="XOO-bf-1wF"/>
+                                                        <outlet property="dragDelegate" destination="rUh-4L-sll" id="oy7-gZ-cSn"/>
+                                                    </connections>
+                                                </collectionView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-QQ-Cv2">
                                                     <rect key="frame" x="260" y="0.0" width="40" height="40"/>
                                                     <subviews>
@@ -398,23 +476,29 @@
                                                         <constraint firstItem="aia-eC-yx1" firstAttribute="centerY" secondItem="fdJ-QQ-Cv2" secondAttribute="centerY" id="ybm-CQ-VGS"/>
                                                     </constraints>
                                                 </view>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-i3-fnh">
+                                                    <rect key="frame" x="130.66666666666666" y="82" width="39" height="37"/>
+                                                </pageControl>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="VBt-23-YzH" firstAttribute="top" secondItem="gM9-wI-QA2" secondAttribute="bottom" constant="5" id="5Lk-4u-YWe"/>
+                                            <constraint firstAttribute="trailing" secondItem="gM9-wI-QA2" secondAttribute="trailing" id="Gam-yx-OgI"/>
                                             <constraint firstAttribute="trailing" secondItem="fdJ-QQ-Cv2" secondAttribute="trailing" id="IjT-4Q-J5I"/>
-                                            <constraint firstItem="DgC-ZY-Fvi" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="N8l-0c-A2h"/>
-                                            <constraint firstItem="VBt-23-YzH" firstAttribute="top" secondItem="DgC-ZY-Fvi" secondAttribute="bottom" constant="4" id="PA8-RS-RAV"/>
-                                            <constraint firstAttribute="bottom" secondItem="DgC-ZY-Fvi" secondAttribute="bottom" constant="30" id="bhp-xR-dBv"/>
-                                            <constraint firstAttribute="trailing" secondItem="DgC-ZY-Fvi" secondAttribute="trailing" id="ddw-uT-cqd"/>
+                                            <constraint firstAttribute="bottom" secondItem="VBt-23-YzH" secondAttribute="bottom" constant="5" id="Ilo-yM-954"/>
+                                            <constraint firstItem="gM9-wI-QA2" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" id="W0P-uu-GWF"/>
+                                            <constraint firstItem="GqE-i3-fnh" firstAttribute="centerX" secondItem="rUh-4L-sll" secondAttribute="centerX" id="ha2-na-P0a"/>
                                             <constraint firstItem="VBt-23-YzH" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" constant="20" id="iaJ-mm-pA4"/>
+                                            <constraint firstItem="GqE-i3-fnh" firstAttribute="bottom" secondItem="gM9-wI-QA2" secondAttribute="bottom" id="ltC-gD-n13"/>
                                             <constraint firstItem="fdJ-QQ-Cv2" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="wJG-lZ-8jF"/>
-                                            <constraint firstItem="DgC-ZY-Fvi" firstAttribute="leading" secondItem="rUh-4L-sll" secondAttribute="leading" id="x40-Ke-8a0"/>
+                                            <constraint firstItem="gM9-wI-QA2" firstAttribute="top" secondItem="rUh-4L-sll" secondAttribute="top" id="yHA-pZ-zmh"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="favoriteButtonImageView" destination="aia-eC-yx1" id="fjX-SX-1tF"/>
                                             <outlet property="favoriteButtonView" destination="fdJ-QQ-Cv2" id="DwR-gf-jUE"/>
-                                            <outlet property="tourImageView" destination="DgC-ZY-Fvi" id="LRI-4f-4Tj"/>
+                                            <outlet property="imagesCollectionView" destination="gM9-wI-QA2" id="kBP-Tj-yQ5"/>
+                                            <outlet property="pageControll" destination="GqE-i3-fnh" id="RX6-fH-2Y9"/>
                                             <outlet property="tourNameLabel" destination="VBt-23-YzH" id="F9z-1i-LsS"/>
                                         </connections>
                                     </collectionViewCell>
@@ -441,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhg-RB-nil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166.666666666667" y="259.82142857142856"/>
+            <point key="canvasLocation" x="3165.5999999999999" y="259.35960591133005"/>
         </scene>
         <!--Profile-->
         <scene sceneID="WHg-sj-B5R">
