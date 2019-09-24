@@ -521,7 +521,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uCA-vy-Rjh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="1fR-8W-Yky"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="1fR-8W-Yky">
+                        <color key="badgeColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="R1f-eF-wJ7" id="tmv-vN-mro"/>
                     </connections>
@@ -555,6 +557,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="eqt-qx-Qbo" kind="relationship" relationship="viewControllers" id="Fem-32-VWM"/>
