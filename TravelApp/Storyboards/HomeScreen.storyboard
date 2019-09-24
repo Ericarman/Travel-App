@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chat-->
+        <!--View Controller-->
         <scene sceneID="5mP-az-CZw">
             <objects>
                 <viewController id="ehc-yG-y7Y" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wrx-H3-fjo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" id="J3D-sv-kAp"/>
+                    <tabBarItem key="tabBarItem" title="" image="paperplane.fill" catalog="system" id="J3D-sv-kAp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9T-om-arh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5310" y="260"/>
         </scene>
-        <!--Favorites-->
+        <!--Favorites View Controller-->
         <scene sceneID="8Ja-Zi-5eR">
             <objects>
                 <viewController id="IMk-r7-B7d" customClass="FavoritesViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,6 +89,10 @@
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="i9Y-Lu-j9m" id="7Xs-Qh-Tph"/>
+                                                        <outlet property="delegate" destination="i9Y-Lu-j9m" id="9Yn-1B-R5r"/>
+                                                    </connections>
                                                 </collectionView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n5-Nq-DER">
                                                     <rect key="frame" x="260" y="0.0" width="40" height="40"/>
@@ -150,7 +154,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OUO-zW-SFx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorites" id="kah-e4-4HG"/>
+                    <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="kah-e4-4HG"/>
                     <connections>
                         <outlet property="favoritesCollectionView" destination="8nJ-T9-fIC" id="Aqq-2X-lWj"/>
                     </connections>
@@ -159,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="3904.8000000000002" y="259.35960591133005"/>
         </scene>
-        <!--Add-->
+        <!--Empty View Controller-->
         <scene sceneID="N3o-8u-Mhw">
             <objects>
                 <viewController storyboardIdentifier="EmptyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V5I-1x-5eB" customClass="EmptyViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +173,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XRA-nO-fZY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="n5S-FQ-Uv0"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="n5S-FQ-Uv0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojO-aP-MiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +212,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS1-G5-32l" userLabel="PlusButton">
-                                                    <rect key="frame" x="345" y="11" width="22" height="22"/>
+                                                    <rect key="frame" x="323" y="11" width="44" height="44"/>
                                                     <state key="normal" image="Mask"/>
                                                     <connections>
                                                         <action selector="addButtonTapped:" destination="S0o-on-Qeh" eventType="touchUpInside" id="erP-IF-ag7"/>
@@ -387,7 +391,7 @@
             </objects>
             <point key="canvasLocation" x="6108.6956521739139" y="1044.6428571428571"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="8U9-jf-67U">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="eqt-qx-Qbo" customClass="HomeViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -517,7 +521,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uCA-vy-Rjh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="1fR-8W-Yky"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="1fR-8W-Yky"/>
                     <connections>
                         <outlet property="collectionView" destination="R1f-eF-wJ7" id="tmv-vN-mro"/>
                     </connections>
@@ -526,7 +530,7 @@
             </objects>
             <point key="canvasLocation" x="3165.5999999999999" y="259.35960591133005"/>
         </scene>
-        <!--Profile-->
+        <!--View Controller-->
         <scene sceneID="WHg-sj-B5R">
             <objects>
                 <viewController id="62E-tb-lMZ" sceneMemberID="viewController">
@@ -536,7 +540,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jaw-V7-h61"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="XCa-tJ-7wm"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="XCa-tJ-7wm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3Z-uR-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -550,6 +554,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="eqt-qx-Qbo" kind="relationship" relationship="viewControllers" id="Fem-32-VWM"/>
@@ -588,6 +593,11 @@
     <resources>
         <image name="Mask" width="22" height="22"/>
         <image name="garni" width="600" height="600"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
         <image name="star-1" width="24" height="24"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>
