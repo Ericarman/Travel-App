@@ -16,6 +16,9 @@
 		052E779623391EDD00CF02F2 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E779523391EDD00CF02F2 /* OrdersViewController.swift */; };
 		052E779823391F0D00CF02F2 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E779723391F0D00CF02F2 /* OrderTableViewCell.swift */; };
 		052E779B2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E779A2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift */; };
+		052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A1233A3BE700CF02F2 /* HomeViewController.swift */; };
+		052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A3233A3C0B00CF02F2 /* HomeCollectionViewCell.swift */; };
+		052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A5233A3EA400CF02F2 /* HomeViewController+CollectionView.swift */; };
 		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05A83CA52337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */; };
@@ -76,6 +79,9 @@
 		052E779523391EDD00CF02F2 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		052E779723391F0D00CF02F2 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		052E779A2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrdersViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		052E77A1233A3BE700CF02F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		052E77A3233A3C0B00CF02F2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		052E77A5233A3EA400CF02F2 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		05A5F7CE232BD56100834CE3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListDownloader.swift; sourceTree = "<group>"; };
 		05A5F7D7232EA97A00834CE3 /* HomeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
@@ -275,6 +281,40 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		052E779D233A3B8B00CF02F2 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				052E77A0233A3BC000CF02F2 /* Cell */,
+				052E779F233A3BB800CF02F2 /* Controller */,
+				052E779E233A3BAD00CF02F2 /* Extensions */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		052E779E233A3BAD00CF02F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				052E77A5233A3EA400CF02F2 /* HomeViewController+CollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		052E779F233A3BB800CF02F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				052E77A1233A3BE700CF02F2 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		052E77A0233A3BC000CF02F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				052E77A3233A3C0B00CF02F2 /* HomeCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		05A5F7C5232BD24B00834CE3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +381,7 @@
 		05A83CBD2338BD8B00E3E1F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				052E779D233A3B8B00CF02F2 /* HomeScreen */,
 				052E779223391EA700CF02F2 /* Orders */,
 				05A83CC12338C62B00E3E1F5 /* SignUp */,
 			);
@@ -710,7 +751,10 @@
 				052E779B2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift in Sources */,
 				05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */,
 				052E779823391F0D00CF02F2 /* OrderTableViewCell.swift in Sources */,
+				052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */,
 				05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */,
+				052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */,
+				052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */,
 				052E779623391EDD00CF02F2 /* OrdersViewController.swift in Sources */,
 				05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */,
 				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
