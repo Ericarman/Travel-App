@@ -11,7 +11,7 @@ import UIKit
 struct Place: Equatable {
     let id: String
     var name: String
-    var image: UIImage?
+    var imageUrl: String
     
     static func == (lhs: Place, rhs: Place) -> Bool {
         return lhs.id == rhs.id

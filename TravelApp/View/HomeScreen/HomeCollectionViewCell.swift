@@ -16,14 +16,15 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tourNameLabel: UILabel!
     @IBOutlet weak var favoriteButtonView: UIView!
     @IBOutlet weak var favoriteButtonImageView: UIImageView!
-    @IBOutlet weak var tourImageView: UIImageView!
+    @IBOutlet weak var imagesCollectionView: UICollectionView!
+    @IBOutlet weak var pageControll: UIPageControl!
     
     weak var viewModel: TourViewModel!
     
     func setup(with viewModel: TourViewModel) {
         self.viewModel = viewModel
         tourNameLabel.text = viewModel.tourName
-        tourImageView.image = viewModel.tourImage
+        imagesCollectionView.dataSource = self
         togglefavoriteImage()
         favoriteButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(favoriteButtonTapped)))
     }
@@ -35,4 +36,26 @@ class HomeCollectionViewCell: UICollectionViewCell {
     func togglefavoriteImage() {
         self.favoriteButtonImageView.image = viewModel.isFavorite ? UIImage(named: "star-2") : UIImage(named: "star-1")
     }
+}
+
+extension HomeCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.tourPlaces.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = imagesCollectionView.dequeueReusableCell(withReuseIdentifier: "placeImageCell", for: indexPath) as? TourPlacesCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let placeViewModel = self.viewModel.tourPlaces[indexPath.row]
+        cell.setup(viewModel: placeViewModel)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return self.frame.size
+    }
+    
+    
 }

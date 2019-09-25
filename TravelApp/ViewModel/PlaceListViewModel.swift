@@ -20,28 +20,16 @@ class PlaceListViewModel {
         PlaceListDownloader.shared.getPlaces { (placesDict) in
             guard let placesDict = placesDict else { completion(nil); return }
             
-            let group = DispatchGroup()
-            for (id, place) in placesDict {
-                guard let name = place["name"] as? String,
-                    let imageURL = place["image"] as? String else { completion(nil); return }
-                print(imageURL)
+            for (id, data) in placesDict {
+                guard let name = data["name"] as? String,
+                    let imageURL = data["image"] as? String else { completion(nil); return }
+                let place = Place(id: id, name: name, imageUrl: imageURL)
+                self.placesViewModels.append(PlaceViewModel(place: place))
                 
-                group.enter()
-                ImageDownloader.shared.getImage(from: imageURL, completion: { (data) in
-                    guard let data = data else { completion(nil); return }
-                    
-                    let image = UIImage(data: data)!
-                    let place = Place(id: id, name: name, image: image)
-                    let viewModel = PlaceViewModel(place: place)
-                    
-                    self.placesViewModels.append(viewModel)
-                    group.leave()
-                })
             }
             
-            group.notify(queue: DispatchQueue.main, execute: {
-                completion(self.placesViewModels)
-            })
+            completion(self.placesViewModels)
+            
         }
     }
     
@@ -49,6 +37,15 @@ class PlaceListViewModel {
         //TODO: (Eric)
         if !selectedPlacesViewModels.contains(place) {
             selectedPlacesViewModels.append(place)
+        }
+    }
+    
+    func removePlaceFromCollectionView(place: PlaceViewModel) {
+        for index in 0..<selectedPlacesViewModels.count {
+            if place.place.id == selectedPlacesViewModels[index].place.id {
+                selectedPlacesViewModels.remove(at: index)
+                break
+            }
         }
     }
 }
