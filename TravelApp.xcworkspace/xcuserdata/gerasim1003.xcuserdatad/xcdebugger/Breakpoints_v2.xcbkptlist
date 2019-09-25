@@ -7,17 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "860E0891-ED7D-4EC0-A3F9-7E3101AA1553"
+            uuid = "17C554AE-EC58-4F75-BA3A-DAAD2E16086F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TravelApp/View/HomeScreen/HomeViewController.swift"
-            timestampString = "590923960.002769"
+            filePath = "TravelApp/ViewModel/CellViewModel/PlaceViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getImage(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -10,12 +10,8 @@ import Foundation
 
 extension HomeViewController: HomeCollectionViewCellDelegate {
     func tour(with cell: HomeCollectionViewCell) {
-        guard let indexPath = collectionView.indexPath(for: cell) else {
-            return
-        }
         cell.viewModel.isFavorite.toggle()
-        self.collectionView.reloadItems(at: [indexPath])
-
+        cell.togglefavoriteImage()
         if cell.viewModel.isFavorite {
             self.delegate.addToFavorites(tour: cell.viewModel)
         } else {

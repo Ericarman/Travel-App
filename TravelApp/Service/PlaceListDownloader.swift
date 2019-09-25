@@ -14,7 +14,7 @@ class PlaceListDownloader {
     
     private let db = Firestore.firestore()
     
-    func getTourPlaces(from reference: DocumentReference, completion: @escaping ([String: [String: Any]]?) -> Void) {
+    func getTourPlaces(from reference: DocumentReference, completion: @escaping ([(id: String, place: [String : Any])]?) -> Void) {
         reference.getDocument { (snapshot, error) in
             guard let snapshot = snapshot,
                 let data = snapshot.data(),
@@ -22,9 +22,8 @@ class PlaceListDownloader {
                     completion(nil)
                     return
             }
-            
             let group = DispatchGroup()
-            var places = [String: [String: Any]]()
+            var places = [(id: String, place: [String: Any])]()
             for id in placeIds {
                 group.enter()
                 PlaceDownloader.shared.getPlace(by: id, completion: { (placeDic) in
@@ -32,7 +31,7 @@ class PlaceListDownloader {
                         completion(nil)
                         return
                     }
-                    places[id] = placeDic
+                    places.append((id, placeDic))
                     group.leave()
                 })
             }
