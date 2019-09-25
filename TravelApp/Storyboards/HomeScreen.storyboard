@@ -58,7 +58,7 @@
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jLy-C9-X2W">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="124"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pll-De-mk0">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="pll-De-mk0">
                                                         <size key="itemSize" width="50" height="50"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -423,7 +423,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-wI-QA2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="119"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="124"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="AKd-lf-v45">
                                                         <size key="itemSize" width="50" height="50"/>
@@ -480,13 +480,13 @@
                                                     </constraints>
                                                 </view>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-i3-fnh">
-                                                    <rect key="frame" x="130.66666666666666" y="82" width="39" height="37"/>
+                                                    <rect key="frame" x="130.66666666666666" y="87" width="39" height="37"/>
                                                 </pageControl>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="VBt-23-YzH" firstAttribute="top" secondItem="gM9-wI-QA2" secondAttribute="bottom" constant="5" id="5Lk-4u-YWe"/>
+                                            <constraint firstItem="VBt-23-YzH" firstAttribute="top" secondItem="gM9-wI-QA2" secondAttribute="bottom" id="5Lk-4u-YWe"/>
                                             <constraint firstAttribute="trailing" secondItem="gM9-wI-QA2" secondAttribute="trailing" id="Gam-yx-OgI"/>
                                             <constraint firstAttribute="trailing" secondItem="fdJ-QQ-Cv2" secondAttribute="trailing" id="IjT-4Q-J5I"/>
                                             <constraint firstAttribute="bottom" secondItem="VBt-23-YzH" secondAttribute="bottom" constant="5" id="Ilo-yM-954"/>
