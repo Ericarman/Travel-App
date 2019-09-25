@@ -479,7 +479,7 @@
                                                         <constraint firstItem="aia-eC-yx1" firstAttribute="centerY" secondItem="fdJ-QQ-Cv2" secondAttribute="centerY" id="ybm-CQ-VGS"/>
                                                     </constraints>
                                                 </view>
-                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-i3-fnh">
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-i3-fnh">
                                                     <rect key="frame" x="130.66666666666666" y="87" width="39" height="37"/>
                                                 </pageControl>
                                             </subviews>

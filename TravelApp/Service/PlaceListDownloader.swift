@@ -22,7 +22,6 @@ class PlaceListDownloader {
                     completion(nil)
                     return
             }
-            print(placeIds)
             let group = DispatchGroup()
             var places = [(id: String, place: [String: Any])]()
             for id in placeIds {

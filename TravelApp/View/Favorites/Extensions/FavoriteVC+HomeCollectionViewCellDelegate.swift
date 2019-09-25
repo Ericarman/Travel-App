@@ -20,8 +20,6 @@ extension FavoritesViewController: HomeCollectionViewCellDelegate {
         cell.togglefavoriteImage()
         if !cell.viewModel.isFavorite {
             for (index, element) in self.toursViewModel.tours.enumerated() {
-                print(element.id)
-                print(cell.viewModel.id)
                 if element == cell.viewModel {
                     self.toursViewModel.tours.remove(at: index)
                     self.favoritesCollectionView.deleteItems(at: [indexPath])
