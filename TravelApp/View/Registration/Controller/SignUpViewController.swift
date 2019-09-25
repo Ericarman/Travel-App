@@ -48,6 +48,7 @@ class SignUpViewController: UIViewController {
                 guard let signInVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInVC") as? SignInViewController else {
                     return
                 }
+
                 self.present(signInVC, animated: true, completion: nil)
             }
         }
