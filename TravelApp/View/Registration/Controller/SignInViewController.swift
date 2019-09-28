@@ -23,9 +23,6 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.borderStyle = .none
-        passwordTextField.borderStyle = .none
-    
     }    
     @IBAction func signInTapped(_ sender: Any) {
         let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
