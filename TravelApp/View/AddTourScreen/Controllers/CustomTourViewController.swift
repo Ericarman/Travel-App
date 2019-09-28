@@ -19,6 +19,7 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         customTourTableView.dataSource = self
         customTourTableView.delegate = self
+        customTourTableView.allowsSelection = false
         
         selectedPlacesCollectionView.dataSource = self
         selectedPlacesCollectionView.delegate = self
@@ -53,10 +54,20 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func doneTapped(_ sender: Any) {
+        
+        guard let tourOverviewVC = storyboard?.instantiateViewController(identifier: "TourOverviewVC") as? TourOverviewViewController else { return }
+        
+        tourOverviewVC.placeListViewModel = placeListViewModel
+        
+        navigationController?.pushViewController(tourOverviewVC, animated: true)
+    }
+    
     //MARK: -> AttractionTableViewCellDelegate
     
-    func buttonTapped(place: PlaceViewModel) {
-        placeListViewModel.addPlaceToCollectionView(place: place)
-        selectedPlacesCollectionView.reloadData()
+    func addButtonTapped(place: PlaceViewModel) {
+        if placeListViewModel.addPlaceToCollectionView(place: place) {
+            selectedPlacesCollectionView.reloadData()
+        }
     }
 }

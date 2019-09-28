@@ -22,6 +22,7 @@ class AttractionTableViewCell: UITableViewCell {
     
     func setup(with viewModel: PlaceViewModel) {
         self.placeViewModel = viewModel
+        
         placeNameLabel.text = viewModel.placeName
         placeViewModel?.getImage(completion: { (image) in
             DispatchQueue.main.async {
@@ -32,7 +33,6 @@ class AttractionTableViewCell: UITableViewCell {
     
     @IBAction func addButtonTapped(_ sender: Any) {
         guard let place = placeViewModel else { return }
-        delegate?.buttonTapped(place: place)
+        delegate?.addButtonTapped(place: place)
     }
-    
 }

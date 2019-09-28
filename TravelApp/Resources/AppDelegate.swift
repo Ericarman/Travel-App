@@ -17,9 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
         if viewController is EmptyViewController {
-            if let newVC = tabBarController.storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController") {
+            if let addTourNC = tabBarController.storyboard?.instantiateViewController(withIdentifier: "AddTourNavigationController") {
                 
-                tabBarController.present(newVC, animated: true)
+                tabBarController.modalPresentationStyle = .overFullScreen
+                tabBarController.present(addTourNC, animated: true)
                 return false
             }
         }

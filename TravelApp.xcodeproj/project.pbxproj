@@ -56,6 +56,8 @@
 		FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
+		FE84A251233F4ED50084E314 /* TourOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */; };
+		FE84A254233F68870084E314 /* PlaceOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
@@ -130,6 +132,8 @@
 		FE71BB35231EC95B003AE340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE71BB38231EC95B003AE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE71BB3A231EC95B003AE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourOverviewViewController.swift; sourceTree = "<group>"; };
+		FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE9240A02322AB770044594E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FE9240A22322AB800044594E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				0512BB8A232678790025951D /* HomeScreen */,
 				05A5F7CB232BD4EF00834CE3 /* Favorites */,
 				FE95EE0F232A378500AA9393 /* AddTourScreen */,
+				FE84A24F233F4E980084E314 /* TourOverview */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,6 +557,31 @@
 			path = TravelApp;
 			sourceTree = "<group>";
 		};
+		FE84A24F233F4E980084E314 /* TourOverview */ = {
+			isa = PBXGroup;
+			children = (
+				FE84A255233F688C0084E314 /* Cell */,
+				FE84A252233F4EDA0084E314 /* Controllers */,
+			);
+			path = TourOverview;
+			sourceTree = "<group>";
+		};
+		FE84A252233F4EDA0084E314 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE84A255233F688C0084E314 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FE92409C2322AAD90044594E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,6 +824,7 @@
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
 				FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */,
+				FE84A251233F4ED50084E314 /* TourOverviewViewController.swift in Sources */,
 				FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
@@ -810,6 +841,7 @@
 				0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */,
 				FE17D7A5232D1C7C0054A389 /* PlaceViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
+				FE84A254233F68870084E314 /* PlaceOverviewTableViewCell.swift in Sources */,
 				FE9551D1232FD70B00467527 /* HomeCollectionViewCellDelegate.swift in Sources */,
 				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
 				FEC00A31233751A9006B86CE /* TriangleButton.swift in Sources */,
@@ -1014,7 +1046,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TravelApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1034,7 +1066,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TravelApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

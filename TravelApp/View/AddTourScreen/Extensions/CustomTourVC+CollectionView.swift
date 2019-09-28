@@ -27,7 +27,7 @@ extension CustomTourViewController: UICollectionViewDataSource, UICollectionView
     }
     
     func removeTapped(place: PlaceViewModel) {
-        placeListViewModel.removePlaceFromCollectionView(place: place)
+        placeListViewModel.removePlaceFromCollectionView(placeViewModel: place)
         selectedPlacesCollectionView.reloadData()
     }
 }

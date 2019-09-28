@@ -9,5 +9,5 @@
 import UIKit
 
 protocol AttractionTableViewCellDelegate: class {
-    func buttonTapped(place: PlaceViewModel)
+    func addButtonTapped(place: PlaceViewModel)
 }

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8tu-8w-InR">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -212,7 +211,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS1-G5-32l" userLabel="PlusButton">
-                                                    <rect key="frame" x="323" y="11" width="44" height="44"/>
+                                                    <rect key="frame" x="345" y="11" width="22" height="22"/>
                                                     <state key="normal" image="Mask"/>
                                                     <connections>
                                                         <action selector="addButtonTapped:" destination="S0o-on-Qeh" eventType="touchUpInside" id="erP-IF-ag7"/>
@@ -319,7 +318,11 @@
                                 <action selector="cancelTapped:" destination="aN3-8w-ihH" id="lvf-4m-kYD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gd8-pC-ro6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gd8-pC-ro6">
+                            <connections>
+                                <action selector="doneTapped:" destination="aN3-8w-ihH" id="Rt9-4I-E2O"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="customTourTableView" destination="esE-h8-Rbc" id="lyH-h2-ULn"/>
@@ -330,10 +333,10 @@
             </objects>
             <point key="canvasLocation" x="5328.8000000000002" y="1044.0886699507389"/>
         </scene>
-        <!--View Controller-->
+        <!--Tour Overview View Controller-->
         <scene sceneID="xf8-AG-xa6">
             <objects>
-                <viewController id="od3-8j-z0Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TourOverviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="od3-8j-z0Y" customClass="TourOverviewViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ImA-l8-L1Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,7 +345,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DesctiptionCell" rowHeight="125" id="3M3-OE-jH5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaceOverviewCell" rowHeight="125" id="3M3-OE-jH5" customClass="PlaceOverviewTableViewCell" customModule="TravelApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3M3-OE-jH5" id="DbA-5X-inz">
@@ -363,16 +366,29 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTD-8k-3Hs">
+                                                    <rect key="frame" x="20" y="2" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="aqS-iV-orp" firstAttribute="top" secondItem="PTD-8k-3Hs" secondAttribute="bottom" constant="8" id="LGQ-Hl-84T"/>
                                                 <constraint firstItem="aqS-iV-orp" firstAttribute="leading" secondItem="DbA-5X-inz" secondAttribute="leading" constant="20" id="LkJ-Uu-2Cc"/>
                                                 <constraint firstItem="aqS-iV-orp" firstAttribute="top" secondItem="DbA-5X-inz" secondAttribute="topMargin" constant="20" id="R5S-hI-pJY"/>
                                                 <constraint firstItem="bSe-Sb-rir" firstAttribute="leading" secondItem="aqS-iV-orp" secondAttribute="trailing" constant="20" id="UbO-Tw-5hy"/>
                                                 <constraint firstItem="bSe-Sb-rir" firstAttribute="height" secondItem="aqS-iV-orp" secondAttribute="height" id="Ut8-Df-uZn"/>
+                                                <constraint firstItem="aqS-iV-orp" firstAttribute="leading" secondItem="PTD-8k-3Hs" secondAttribute="leading" id="cMy-yU-ACK"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bSe-Sb-rir" secondAttribute="trailing" constant="12" id="mqK-7h-4zB"/>
                                                 <constraint firstItem="bSe-Sb-rir" firstAttribute="top" secondItem="aqS-iV-orp" secondAttribute="top" id="xuw-yc-h9Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="bSe-Sb-rir" id="3ZD-Or-K9U"/>
+                                            <outlet property="mainImageView" destination="aqS-iV-orp" id="eU9-7i-m6I"/>
+                                            <outlet property="nameLabel" destination="PTD-8k-3Hs" id="yKV-Kc-vdo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -386,6 +402,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="856-h3-mlu"/>
                     </view>
+                    <connections>
+                        <outlet property="tourOverviewTableView" destination="tBw-sF-Slq" id="FAP-6B-YNa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBQ-Zh-4mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

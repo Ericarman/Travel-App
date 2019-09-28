@@ -33,16 +33,18 @@ class PlaceListViewModel {
         }
     }
     
-    func addPlaceToCollectionView(place: PlaceViewModel) {
+    func addPlaceToCollectionView(place: PlaceViewModel) -> Bool {
         //TODO: (Eric)
         if !selectedPlacesViewModels.contains(place) {
             selectedPlacesViewModels.append(place)
+            return true
         }
+        return false
     }
     
-    func removePlaceFromCollectionView(place: PlaceViewModel) {
+    func removePlaceFromCollectionView(placeViewModel: PlaceViewModel) {
         for index in 0..<selectedPlacesViewModels.count {
-            if place.place.id == selectedPlacesViewModels[index].place.id {
+            if placeViewModel.place.id == selectedPlacesViewModels[index].place.id {
                 selectedPlacesViewModels.remove(at: index)
                 break
             }
