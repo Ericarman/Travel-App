@@ -13,7 +13,7 @@ class TourViewModel: Equatable {
     private var tour: Tour
     private var places: [PlaceViewModel]
     
-    init?(snapshot: QueryDocumentSnapshot, places: [String : [String : Any]]) {
+    init?(snapshot: QueryDocumentSnapshot, places: [(id: String, place: [String : Any])]) {
         let data = snapshot.data()
         let id = snapshot.documentID
         let name = data["name"] as! String

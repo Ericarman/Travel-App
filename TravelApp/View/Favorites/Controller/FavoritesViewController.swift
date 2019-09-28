@@ -31,6 +31,7 @@ class FavoritesViewController: UIViewController, UICollectionViewDataSource, UIC
         }
     
         cell.delegate = self
+        cell.imagesCollectionView.reloadData()
         cell.setup(with: self.toursViewModel.tours[indexPath.row])
     
         return cell
