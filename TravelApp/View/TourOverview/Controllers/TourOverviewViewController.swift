@@ -20,7 +20,7 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
         tourOverviewTableView.dataSource = self
         tourOverviewTableView.delegate = self
         
-        tourOverviewTableView.allowsSelection = false
+        //tourOverviewTableView.allowsSelection = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,11 +32,19 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
             return UITableViewCell()
         }
         cell.setup(with: placeListViewModel.selectedPlacesViewModels[indexPath.row])
+        cell.selectionStyle = .none
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let descriptionVC = storyboard?.instantiateViewController(identifier: "DescriptionVC") as? DescriptionViewController else { return }
+        
+        navigationController?.pushViewController(descriptionVC, animated: true)
     }
 }

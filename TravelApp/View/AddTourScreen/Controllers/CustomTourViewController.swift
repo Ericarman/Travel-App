@@ -50,6 +50,8 @@ class CustomTourViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
+    //MARK: -> Actions
+    
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

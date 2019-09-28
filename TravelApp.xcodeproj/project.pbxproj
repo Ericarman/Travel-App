@@ -58,6 +58,7 @@
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
 		FE84A251233F4ED50084E314 /* TourOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */; };
 		FE84A254233F68870084E314 /* PlaceOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */; };
+		FE84A257233F88120084E314 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A256233F88120084E314 /* DescriptionViewController.swift */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
@@ -134,6 +135,7 @@
 		FE71BB3A231EC95B003AE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourOverviewViewController.swift; sourceTree = "<group>"; };
 		FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOverviewTableViewCell.swift; sourceTree = "<group>"; };
+		FE84A256233F88120084E314 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		FE92409A2322A36D0044594E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE9240A02322AB770044594E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FE9240A22322AB800044594E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -570,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */,
+				FE84A256233F88120084E314 /* DescriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -822,6 +825,7 @@
 				FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */,
 				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
+				FE84A257233F88120084E314 /* DescriptionViewController.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
 				FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */,
 				FE84A251233F4ED50084E314 /* TourOverviewViewController.swift in Sources */,
