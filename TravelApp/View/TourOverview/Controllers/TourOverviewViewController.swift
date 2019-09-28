@@ -31,7 +31,7 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceOverviewCell") as? PlaceOverviewTableViewCell else {
             return UITableViewCell()
         }
-        cell.setup(with: placeListViewModel.placesViewModels[indexPath.row])
+        cell.setup(with: placeListViewModel.selectedPlacesViewModels[indexPath.row])
         
         return cell
     }
