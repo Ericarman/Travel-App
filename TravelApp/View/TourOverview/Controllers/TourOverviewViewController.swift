@@ -19,8 +19,6 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
 
         tourOverviewTableView.dataSource = self
         tourOverviewTableView.delegate = self
-        
-        //tourOverviewTableView.allowsSelection = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,6 +42,8 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let descriptionVC = storyboard?.instantiateViewController(identifier: "DescriptionVC") as? DescriptionViewController else { return }
+        
+        descriptionVC.viewModel = placeListViewModel.selectedPlacesViewModels[indexPath.row]
         
         navigationController?.pushViewController(descriptionVC, animated: true)
     }
