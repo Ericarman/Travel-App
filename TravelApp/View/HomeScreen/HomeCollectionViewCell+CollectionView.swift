@@ -27,11 +27,6 @@ extension HomeCollectionViewCell: UICollectionViewDataSource, UICollectionViewDe
         return self.frame.size
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//                self.pageControll.currentPage = indexPath.row
-//
-//    }
-    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         self.pageControll.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
