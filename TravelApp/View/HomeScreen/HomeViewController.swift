@@ -26,6 +26,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         
         let favoriteVC = self.tabBarController?.viewControllers![1] as! FavoritesViewController
         self.delegate = favoriteVC
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
