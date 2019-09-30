@@ -39,7 +39,6 @@
 		05F46A022342213D00DD5482 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB5F2323F8E20025951D /* Utilities.swift */; };
 		05F46A032342214200DD5482 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
 		05F46A052342220400DD5482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
-		05F46A062342225600DD5482 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB3A231EC95B003AE340 /* Info.plist */; };
 		05F46A08234223F000DD5482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
 		A52B7AC393DD6D63C2062573 /* Pods_TravelApp_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */; };
@@ -662,7 +661,6 @@
 			files = (
 				0512BB8C232678CE0025951D /* HomeScreen.storyboard in Resources */,
 				FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */,
-				05F46A062342225600DD5482 /* Info.plist in Resources */,
 				FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */,
 				FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */,
 				FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */,
