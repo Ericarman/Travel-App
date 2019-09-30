@@ -33,7 +33,16 @@
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
 		05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FF232A881C0098E286 /* PlaceDownloader.swift */; };
 		05D19D9F233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */; };
+		05F469FF234220F000DD5482 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
+		05F46A002342211200DD5482 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9023267E7F0025951D /* UserViewModel.swift */; };
+		05F46A012342213500DD5482 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB8D23267CE80025951D /* User.swift */; };
+		05F46A022342213D00DD5482 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB5F2323F8E20025951D /* Utilities.swift */; };
+		05F46A032342214200DD5482 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
+		05F46A052342220400DD5482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
+		05F46A062342225600DD5482 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB3A231EC95B003AE340 /* Info.plist */; };
+		05F46A08234223F000DD5482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
+		A52B7AC393DD6D63C2062573 /* Pods_TravelApp_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */; };
 		FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */; };
 		FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */; };
 		FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D7A0232CDE270054A389 /* CustomTour.swift */; };
@@ -49,7 +58,6 @@
 		FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB35231EC95B003AE340 /* Assets.xcassets */; };
 		FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB37231EC95B003AE340 /* LaunchScreen.storyboard */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
-		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
 		FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E3232EED3200834CE3 /* FavoriteVC+HomeCollectionViewCellDelegate.swift */; };
 		FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7CE232BD56100834CE3 /* FavoritesViewController.swift */; };
@@ -96,7 +104,10 @@
 		05D108FD23296E360098E286 /* ToursDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDownloader.swift; sourceTree = "<group>"; };
 		05D108FF232A881C0098E286 /* PlaceDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDownloader.swift; sourceTree = "<group>"; };
 		05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCollectionViewCell+CollectionView.swift"; sourceTree = "<group>"; };
+		19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp Driver.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp Driver.release.xcconfig"; path = "Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver.release.xcconfig"; sourceTree = "<group>"; };
 		EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52B7AC393DD6D63C2062573 /* Pods_TravelApp_Driver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */,
+				4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,6 +442,8 @@
 			children = (
 				F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */,
 				EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */,
+				19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */,
+				75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -557,9 +572,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A83CBB2338B9BB00E3E1F5 /* Build configuration list for PBXNativeTarget "TravelApp Driver" */;
 			buildPhases = (
+				476653AE594AE8CF2C360123 /* [CP] Check Pods Manifest.lock */,
 				05A83CA62338B9B600E3E1F5 /* Sources */,
 				05A83CA72338B9B600E3E1F5 /* Frameworks */,
 				05A83CA82338B9B600E3E1F5 /* Resources */,
+				2AFE6E560DEFD0B58D43DE63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -633,7 +650,9 @@
 			files = (
 				05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */,
 				05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */,
+				05F46A08234223F000DD5482 /* GoogleService-Info.plist in Resources */,
 				05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */,
+				05F46A052342220400DD5482 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +662,7 @@
 			files = (
 				0512BB8C232678CE0025951D /* HomeScreen.storyboard in Resources */,
 				FE71BB39231EC95B003AE340 /* LaunchScreen.storyboard in Resources */,
+				05F46A062342225600DD5482 /* Info.plist in Resources */,
 				FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */,
 				FE71BB36231EC95B003AE340 /* Assets.xcassets in Resources */,
 				FE71BB34231EC95A003AE340 /* Main.storyboard in Resources */,
@@ -668,6 +688,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TravelApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AFE6E560DEFD0B58D43DE63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476653AE594AE8CF2C360123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelApp Driver-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -700,11 +759,15 @@
 			files = (
 				052E779B2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift in Sources */,
 				052E779823391F0D00CF02F2 /* OrderTableViewCell.swift in Sources */,
+				05F46A022342213D00DD5482 /* Utilities.swift in Sources */,
 				052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */,
+				05F46A032342214200DD5482 /* Registration.swift in Sources */,
 				052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */,
 				054D6E622342126500577C5E /* SignInViewController.swift in Sources */,
 				052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */,
 				052E779623391EDD00CF02F2 /* OrdersViewController.swift in Sources */,
+				05F46A002342211200DD5482 /* UserViewModel.swift in Sources */,
+				05F46A012342213500DD5482 /* User.swift in Sources */,
 				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,7 +789,6 @@
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
 				0506ADA423323FC800894EF6 /* ImageDownloader.swift in Sources */,
 				FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */,
-				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
 				FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */,
@@ -746,6 +808,7 @@
 				0512BB9123267E7F0025951D /* UserViewModel.swift in Sources */,
 				FE17D7A5232D1C7C0054A389 /* PlaceViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
+				05F469FF234220F000DD5482 /* SignInViewController.swift in Sources */,
 				FE9551D1232FD70B00467527 /* HomeCollectionViewCellDelegate.swift in Sources */,
 				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
 				FEC00A31233751A9006B86CE /* TriangleButton.swift in Sources */,
@@ -792,6 +855,7 @@
 /* Begin XCBuildConfiguration section */
 		05A83CB92338B9BB00E3E1F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,6 +866,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D Driver";
 				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -811,6 +876,7 @@
 		};
 		05A83CBA2338B9BB00E3E1F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

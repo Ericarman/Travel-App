@@ -2,16 +2,19 @@
 # platform :ios, '9.0'
 use_frameworks!
 
-target 'TravelApp' do
-  
-  # Pods for TravelApp
-  # add pods for desired Firebase products
-  # https://firebase.google.com/docs/ios/setup#available-pods
-  
+def shared_pods
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'Protobuf', :inhibit_warnings => true
+end
+
+target 'TravelApp' do
+    shared_pods
+end
+
+target 'TravelApp Driver' do
+    shared_pods
 end
