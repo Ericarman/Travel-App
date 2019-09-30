@@ -19,6 +19,7 @@
 		052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A1233A3BE700CF02F2 /* HomeViewController.swift */; };
 		052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A3233A3C0B00CF02F2 /* HomeCollectionViewCell.swift */; };
 		052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A5233A3EA400CF02F2 /* HomeViewController+CollectionView.swift */; };
+		054D6E622342126500577C5E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05A83CA52337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */; };
@@ -26,21 +27,12 @@
 		05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */; };
 		05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */; };
 		05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */; };
-		05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
-		05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */; };
-		05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */; };
-		05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */; };
-		05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */; };
-		05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */; };
-		05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
 		05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FF232A881C0098E286 /* PlaceDownloader.swift */; };
 		05D19D9F233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */; };
-		05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */; };
-		05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6299A2338E3E20048B17C /* SignUpViewController.swift */; };
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
 		FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */; };
 		FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */; };
@@ -97,12 +89,6 @@
 		05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A83CB62338B9BB00E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A83CB82338B9BB00E3E1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstCollectionViewCell.xib; sourceTree = "<group>"; };
-		05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondCollectionViewCell.xib; sourceTree = "<group>"; };
-		05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpThirdCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* TourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -110,8 +96,6 @@
 		05D108FD23296E360098E286 /* ToursDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDownloader.swift; sourceTree = "<group>"; };
 		05D108FF232A881C0098E286 /* PlaceDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDownloader.swift; sourceTree = "<group>"; };
 		05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCollectionViewCell+CollectionView.swift"; sourceTree = "<group>"; };
-		05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+CollectionViewController.swift"; sourceTree = "<group>"; };
-		05F6299A2338E3E20048B17C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -385,7 +369,6 @@
 			children = (
 				052E779D233A3B8B00CF02F2 /* HomeScreen */,
 				052E779223391EA700CF02F2 /* Orders */,
-				05A83CC12338C62B00E3E1F5 /* SignUp */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,29 +398,6 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		05A83CC12338C62B00E3E1F5 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				05A83CC22338C63600E3E1F5 /* Cell */,
-				05F629962338DD000048B17C /* Controller */,
-				05F629972338DD110048B17C /* Extension */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
-		05A83CC22338C63600E3E1F5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */,
-				05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */,
-				05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */,
-				05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */,
-				05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */,
-				05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		05D108F32329675E0098E286 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,22 +414,6 @@
 				05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */,
 			);
 			name = Extension;
-			sourceTree = "<group>";
-		};
-		05F629962338DD000048B17C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				05F6299A2338E3E20048B17C /* SignUpViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		05F629972338DD110048B17C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		369608D8D31B36C4CF83282D /* Frameworks */ = {
@@ -690,10 +634,6 @@
 				05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */,
 				05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */,
 				05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */,
-				05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */,
-				05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */,
-				05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */,
-				05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,18 +698,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */,
 				052E779B2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift in Sources */,
-				05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */,
 				052E779823391F0D00CF02F2 /* OrderTableViewCell.swift in Sources */,
 				052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */,
-				05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */,
 				052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */,
+				054D6E622342126500577C5E /* SignInViewController.swift in Sources */,
 				052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */,
 				052E779623391EDD00CF02F2 /* OrdersViewController.swift in Sources */,
-				05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */,
 				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
-				05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,6 +801,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -883,6 +820,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D Driver";
 				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
