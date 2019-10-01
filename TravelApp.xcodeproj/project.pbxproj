@@ -19,6 +19,7 @@
 		052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A1233A3BE700CF02F2 /* HomeViewController.swift */; };
 		052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A3233A3C0B00CF02F2 /* HomeCollectionViewCell.swift */; };
 		052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E77A5233A3EA400CF02F2 /* HomeViewController+CollectionView.swift */; };
+		054D6E622342126500577C5E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		05A5F7D3232D6D5400834CE3 /* PlaceListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */; };
 		05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E1232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift */; };
 		05A83CA52337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CA42337EDE100E3E1F5 /* TourPlacesCollectionViewCell.swift */; };
@@ -26,22 +27,23 @@
 		05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB02338B9B700E3E1F5 /* DriverMain.storyboard */; };
 		05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */; };
 		05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CB52338B9BB00E3E1F5 /* LaunchScreen.storyboard */; };
-		05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
-		05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */; };
-		05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */; };
-		05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */; };
-		05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */; };
-		05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */; };
-		05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */; };
 		05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */; };
 		05D108F923296CCD0098E286 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F823296CCD0098E286 /* Tour.swift */; };
 		05D108FB23296CDA0098E286 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FA23296CDA0098E286 /* Place.swift */; };
 		05D108FE23296E360098E286 /* ToursDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FD23296E360098E286 /* ToursDownloader.swift */; };
 		05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108FF232A881C0098E286 /* PlaceDownloader.swift */; };
 		05D19D9F233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */; };
-		05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */; };
-		05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6299A2338E3E20048B17C /* SignUpViewController.swift */; };
+		05F469FF234220F000DD5482 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
+		05F46A002342211200DD5482 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9023267E7F0025951D /* UserViewModel.swift */; };
+		05F46A012342213500DD5482 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB8D23267CE80025951D /* User.swift */; };
+		05F46A022342213D00DD5482 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB5F2323F8E20025951D /* Utilities.swift */; };
+		05F46A032342214200DD5482 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512BB9223267FFA0025951D /* Registration.swift */; };
+		05F46A052342220400DD5482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71BB32231EC95A003AE340 /* Main.storyboard */; };
+		05F46A08234223F000DD5482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
+		05F46A0C23425EC600DD5482 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F46A0B23425EC600DD5482 /* TripViewModel.swift */; };
+		05F46A0E23425FF800DD5482 /* TripUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F46A0D23425FF800DD5482 /* TripUploader.swift */; };
 		A4997D9F2BA3E000EC40D739 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */; };
+		A52B7AC393DD6D63C2062573 /* Pods_TravelApp_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */; };
 		FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */; };
 		FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */; };
 		FE17D7A1232CDE270054A389 /* CustomTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17D7A0232CDE270054A389 /* CustomTour.swift */; };
@@ -60,7 +62,6 @@
 		FE84A254233F68870084E314 /* PlaceOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */; };
 		FE84A257233F88120084E314 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84A256233F88120084E314 /* DescriptionViewController.swift */; };
 		FE92409B2322A36D0044594E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE92409A2322A36D0044594E /* GoogleService-Info.plist */; };
-		FE9240A12322AB770044594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A02322AB770044594E /* SignInViewController.swift */; };
 		FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9240A22322AB800044594E /* SignUpViewController.swift */; };
 		FE9551CF232FD68200467527 /* FavoriteVC+HomeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7E3232EED3200834CE3 /* FavoriteVC+HomeCollectionViewCellDelegate.swift */; };
 		FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F7CE232BD56100834CE3 /* FavoritesViewController.swift */; };
@@ -100,12 +101,6 @@
 		05A83CB32338B9BB00E3E1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A83CB62338B9BB00E3E1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A83CB82338B9BB00E3E1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstCollectionViewCell.xib; sourceTree = "<group>"; };
-		05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondCollectionViewCell.xib; sourceTree = "<group>"; };
-		05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpThirdCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		05D108F42329678F0098E286 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05D108F623296CB80098E286 /* TourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewModel.swift; sourceTree = "<group>"; };
 		05D108F823296CCD0098E286 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -113,9 +108,12 @@
 		05D108FD23296E360098E286 /* ToursDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDownloader.swift; sourceTree = "<group>"; };
 		05D108FF232A881C0098E286 /* PlaceDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDownloader.swift; sourceTree = "<group>"; };
 		05D19D9E233A4EDC00165FE0 /* HomeCollectionViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCollectionViewCell+CollectionView.swift"; sourceTree = "<group>"; };
-		05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+CollectionViewController.swift"; sourceTree = "<group>"; };
-		05F6299A2338E3E20048B17C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		05F46A0B23425EC600DD5482 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		05F46A0D23425FF800DD5482 /* TripUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripUploader.swift; sourceTree = "<group>"; };
+		19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp Driver.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp Driver.release.xcconfig"; path = "Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver.release.xcconfig"; sourceTree = "<group>"; };
 		EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52B7AC393DD6D63C2062573 /* Pods_TravelApp_Driver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +234,7 @@
 				05D108FF232A881C0098E286 /* PlaceDownloader.swift */,
 				05A5F7D2232D6D5400834CE3 /* PlaceListDownloader.swift */,
 				0506ADA323323FC800894EF6 /* ImageDownloader.swift */,
+				05F46A0D23425FF800DD5482 /* TripUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -392,7 +392,6 @@
 			children = (
 				052E779D233A3B8B00CF02F2 /* HomeScreen */,
 				052E779223391EA700CF02F2 /* Orders */,
-				05A83CC12338C62B00E3E1F5 /* SignUp */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,29 +421,6 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		05A83CC12338C62B00E3E1F5 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				05A83CC22338C63600E3E1F5 /* Cell */,
-				05F629962338DD000048B17C /* Controller */,
-				05F629972338DD110048B17C /* Extension */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
-		05A83CC22338C63600E3E1F5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				05A83CC32338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift */,
-				05A83CC42338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib */,
-				05A83CC72338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift */,
-				05A83CC82338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib */,
-				05A83CCB2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift */,
-				05A83CCC2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		05D108F32329675E0098E286 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,26 +439,11 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
-		05F629962338DD000048B17C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				05F6299A2338E3E20048B17C /* SignUpViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		05F629972338DD110048B17C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				05F629982338DD540048B17C /* SignUpViewController+CollectionViewController.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		369608D8D31B36C4CF83282D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				639C197BC5CD5D532ABC1F20 /* Pods_TravelApp.framework */,
+				4ACB277EDA6AE5E50622D3EE /* Pods_TravelApp_Driver.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -492,6 +453,8 @@
 			children = (
 				F03C5706BBC77942F468D8A9 /* Pods-TravelApp.debug.xcconfig */,
 				EAB260F0DD2857AD70B5A3F1 /* Pods-TravelApp.release.xcconfig */,
+				19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */,
+				75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -501,6 +464,7 @@
 			children = (
 				FE17D7A4232D1C7C0054A389 /* PlaceViewModel.swift */,
 				FE9551D42331499C00467527 /* TourViewModel.swift */,
+				05F46A0B23425EC600DD5482 /* TripViewModel.swift */,
 			);
 			path = CellViewModel;
 			sourceTree = "<group>";
@@ -646,9 +610,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A83CBB2338B9BB00E3E1F5 /* Build configuration list for PBXNativeTarget "TravelApp Driver" */;
 			buildPhases = (
+				476653AE594AE8CF2C360123 /* [CP] Check Pods Manifest.lock */,
 				05A83CA62338B9B600E3E1F5 /* Sources */,
 				05A83CA72338B9B600E3E1F5 /* Frameworks */,
 				05A83CA82338B9B600E3E1F5 /* Resources */,
+				2AFE6E560DEFD0B58D43DE63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -722,11 +688,9 @@
 			files = (
 				05A83CB72338B9BB00E3E1F5 /* LaunchScreen.storyboard in Resources */,
 				05A83CB42338B9BB00E3E1F5 /* Assets.xcassets in Resources */,
+				05F46A08234223F000DD5482 /* GoogleService-Info.plist in Resources */,
 				05A83CB22338B9B700E3E1F5 /* DriverMain.storyboard in Resources */,
-				05A83CBC2338BC3100E3E1F5 /* Main.storyboard in Resources */,
-				05A83CCE2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.xib in Resources */,
-				05A83CCA2338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.xib in Resources */,
-				05A83CC62338C66500E3E1F5 /* SignUpFirstCollectionViewCell.xib in Resources */,
+				05F46A052342220400DD5482 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +731,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2AFE6E560DEFD0B58D43DE63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelApp Driver/Pods-TravelApp Driver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476653AE594AE8CF2C360123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelApp Driver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4B5709A1EC8E0FD7D4FFEAFE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -791,18 +794,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F6299B2338E3E20048B17C /* SignUpViewController.swift in Sources */,
 				052E779B2339205000CF02F2 /* OrdersViewController+TableViewDataSource.swift in Sources */,
-				05A83CC92338CBBF00E3E1F5 /* SignUpSecondCollectionViewCell.swift in Sources */,
 				052E779823391F0D00CF02F2 /* OrderTableViewCell.swift in Sources */,
+				05F46A022342213D00DD5482 /* Utilities.swift in Sources */,
 				052E77A6233A3EA400CF02F2 /* HomeViewController+CollectionView.swift in Sources */,
-				05A83CCD2338CBDA00E3E1F5 /* SignUpThirdCollectionViewCell.swift in Sources */,
+				05F46A032342214200DD5482 /* Registration.swift in Sources */,
 				052E77A2233A3BE700CF02F2 /* HomeViewController.swift in Sources */,
+				054D6E622342126500577C5E /* SignInViewController.swift in Sources */,
 				052E77A4233A3C0B00CF02F2 /* HomeCollectionViewCell.swift in Sources */,
 				052E779623391EDD00CF02F2 /* OrdersViewController.swift in Sources */,
-				05A83CC52338C66500E3E1F5 /* SignUpFirstCollectionViewCell.swift in Sources */,
+				05F46A002342211200DD5482 /* UserViewModel.swift in Sources */,
+				05F46A012342213500DD5482 /* User.swift in Sources */,
 				05A83CAD2338B9B700E3E1F5 /* AppDelegate.swift in Sources */,
-				05F629992338DD540048B17C /* SignUpViewController+CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,16 +823,17 @@
 				FE2313802334F7F3003E28F0 /* AttractionTableViewCellDelegate.swift in Sources */,
 				05D108FB23296CDA0098E286 /* Place.swift in Sources */,
 				FE17D7A3232CDFBF0054A389 /* PlaceListViewModel.swift in Sources */,
+				05F46A0C23425EC600DD5482 /* TripViewModel.swift in Sources */,
 				FE9240A32322AB800044594E /* SignUpViewController.swift in Sources */,
 				0506ADA423323FC800894EF6 /* ImageDownloader.swift in Sources */,
 				FE9551D0232FD69900467527 /* FavoritesViewController.swift in Sources */,
-				FE9240A12322AB770044594E /* SignInViewController.swift in Sources */,
 				0512BB8E23267CE80025951D /* User.swift in Sources */,
 				FE84A257233F88120084E314 /* DescriptionViewController.swift in Sources */,
 				FE17D79D232CB7AF0054A389 /* EmptyViewController.swift in Sources */,
 				FE9551D2232FD70E00467527 /* HomeViewControllerDelegate.swift in Sources */,
 				FE84A251233F4ED50084E314 /* TourOverviewViewController.swift in Sources */,
 				FE17D79F232CBDF00054A389 /* AttractionTableViewCell.swift in Sources */,
+				05F46A0E23425FF800DD5482 /* TripUploader.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
@@ -846,6 +850,7 @@
 				FE17D7A5232D1C7C0054A389 /* PlaceViewModel.swift in Sources */,
 				05D10900232A881C0098E286 /* PlaceDownloader.swift in Sources */,
 				FE84A254233F68870084E314 /* PlaceOverviewTableViewCell.swift in Sources */,
+				05F469FF234220F000DD5482 /* SignInViewController.swift in Sources */,
 				FE9551D1232FD70B00467527 /* HomeCollectionViewCellDelegate.swift in Sources */,
 				FE3A7A752323B3BD00517B4E /* HomeViewController.swift in Sources */,
 				FEC00A31233751A9006B86CE /* TriangleButton.swift in Sources */,
@@ -892,6 +897,7 @@
 /* Begin XCBuildConfiguration section */
 		05A83CB92338B9BB00E3E1F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19192F6D6C0C27AF3252BB38 /* Pods-TravelApp Driver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -901,6 +907,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D Driver";
 				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -910,6 +918,7 @@
 		};
 		05A83CBA2338B9BB00E3E1F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B350F9EB3512EF89B62411 /* Pods-TravelApp Driver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -919,6 +928,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D Driver";
 				PRODUCT_BUNDLE_IDENTIFIER = "-003.TravelApp-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -25,24 +25,29 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         emailTextField.borderStyle = .none
         passwordTextField.borderStyle = .none
+        
+        #if Driver
+            RegisterNewAccountButton.isHidden = true
+        #endif
     
     }    
     @IBAction func signInTapped(_ sender: Any) {
-        let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
-        
-        self.present(homeVC, animated: true, completion: nil)
         
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
             let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         
         userViewModel.signIn(email: email, Password: password) { (user) in
-            if let _ = user {
-                let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
+//            if let _ = user {
+                #if Driver
+                    let homeVC = UIStoryboard(name: "DriverMain", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
+                #else
+                    let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
+                #endif
+            self.present(homeVC, animated: true, completion: nil)
                 
-                self.present(homeVC, animated: true, completion: nil)
-            } else {
+//            } else {
                 //error
-            }
+//            }
         }
         
     }
