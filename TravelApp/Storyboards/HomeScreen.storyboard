@@ -333,7 +333,7 @@
             </objects>
             <point key="canvasLocation" x="5328.8000000000002" y="1044.0886699507389"/>
         </scene>
-        <!--Tour Overview View Controller-->
+        <!--Overview-->
         <scene sceneID="xf8-AG-xa6">
             <objects>
                 <viewController storyboardIdentifier="TourOverviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="od3-8j-z0Y" customClass="TourOverviewViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -342,7 +342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tBw-sF-Slq">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaceOverviewCell" rowHeight="125" id="3M3-OE-jH5" customClass="PlaceOverviewTableViewCell" customModule="TravelApp" customModuleProvider="target">
@@ -395,20 +395,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tBw-sF-Slq" firstAttribute="top" secondItem="856-h3-mlu" secondAttribute="top" id="Dzq-lf-X2i"/>
                             <constraint firstItem="856-h3-mlu" firstAttribute="bottom" secondItem="tBw-sF-Slq" secondAttribute="bottom" id="adD-fa-OHP"/>
                             <constraint firstItem="856-h3-mlu" firstAttribute="trailing" secondItem="tBw-sF-Slq" secondAttribute="trailing" id="d7G-DO-05a"/>
-                            <constraint firstItem="tBw-sF-Slq" firstAttribute="top" secondItem="856-h3-mlu" secondAttribute="top" id="s8M-8D-F3j"/>
                             <constraint firstItem="tBw-sF-Slq" firstAttribute="leading" secondItem="856-h3-mlu" secondAttribute="leading" id="y64-4b-OLG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="856-h3-mlu"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Overview" id="Dor-7I-gCh">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="gOn-RK-2l2"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tourOverviewTableView" destination="tBw-sF-Slq" id="FAP-6B-YNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBQ-Zh-4mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6108.6956521739139" y="1044.6428571428571"/>
+            <point key="canvasLocation" x="6108" y="1044.0886699507389"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="WuX-zS-pPb">
