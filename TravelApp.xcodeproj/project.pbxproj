@@ -188,7 +188,6 @@
 				0512BB8A232678790025951D /* HomeScreen */,
 				05A5F7CB232BD4EF00834CE3 /* Favorites */,
 				FE95EE0F232A378500AA9393 /* AddTourScreen */,
-				FE84A24F233F4E980084E314 /* TourOverview */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,32 +522,6 @@
 			path = TravelApp;
 			sourceTree = "<group>";
 		};
-		FE84A24F233F4E980084E314 /* TourOverview */ = {
-			isa = PBXGroup;
-			children = (
-				FE84A255233F688C0084E314 /* Cell */,
-				FE84A252233F4EDA0084E314 /* Controllers */,
-			);
-			path = TourOverview;
-			sourceTree = "<group>";
-		};
-		FE84A252233F4EDA0084E314 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */,
-				FE84A256233F88120084E314 /* DescriptionViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		FE84A255233F688C0084E314 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		FE92409C2322AAD90044594E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +554,7 @@
 			isa = PBXGroup;
 			children = (
 				FE17D79E232CBDF00054A389 /* AttractionTableViewCell.swift */,
+				FE84A253233F68870084E314 /* PlaceOverviewTableViewCell.swift */,
 				FE23137C2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -589,8 +563,10 @@
 		FE95EE11232A37D200AA9393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */,
 				FE17D79C232CB7AF0054A389 /* EmptyViewController.swift */,
+				FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */,
+				FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */,
+				FE84A256233F88120084E314 /* DescriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -903,6 +879,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD56F4Y23U;
 				INFOPLIST_FILE = "TravelApp Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -924,6 +901,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD56F4Y23U;
 				INFOPLIST_FILE = "TravelApp Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
