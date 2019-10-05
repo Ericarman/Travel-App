@@ -72,6 +72,7 @@
 		FE9551D7233239F800467527 /* TourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D108F623296CB80098E286 /* TourListViewModel.swift */; };
 		FEC00A31233751A9006B86CE /* TriangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC00A30233751A9006B86CE /* TriangleButton.swift */; };
 		FEC00A3523387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC00A3423387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift */; };
+		FEDAF4722348B25D004AAC6F /* OrderTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDAF4712348B25D004AAC6F /* OrderTourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +142,7 @@
 		FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTourViewController.swift; sourceTree = "<group>"; };
 		FEC00A30233751A9006B86CE /* TriangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleButton.swift; sourceTree = "<group>"; };
 		FEC00A3423387AE3006B86CE /* SelectedPlacesCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlacesCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
+		FEDAF4712348B25D004AAC6F /* OrderTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -567,6 +569,7 @@
 				FE95EE12232A37FF00AA9393 /* CustomTourViewController.swift */,
 				FE84A250233F4ED50084E314 /* TourOverviewViewController.swift */,
 				FE84A256233F88120084E314 /* DescriptionViewController.swift */,
+				FEDAF4712348B25D004AAC6F /* OrderTourViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				05F46A0E23425FF800DD5482 /* TripUploader.swift in Sources */,
 				FE71BB2F231EC95A003AE340 /* AppDelegate.swift in Sources */,
 				05D108F52329678F0098E286 /* HomeCollectionViewCell.swift in Sources */,
+				FEDAF4722348B25D004AAC6F /* OrderTourViewController.swift in Sources */,
 				0512BB602323F8E20025951D /* Utilities.swift in Sources */,
 				05A5F7E2232EDCA500834CE3 /* FavoriteVC+HomeVCDelegate.swift in Sources */,
 				FE23137D2334EBA6003E28F0 /* SelectedPlacesCollectionViewCell.swift in Sources */,
