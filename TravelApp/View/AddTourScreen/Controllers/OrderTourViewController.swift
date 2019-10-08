@@ -10,8 +10,15 @@ import UIKit
 
 class OrderTourViewController: UIViewController {
 
+    @IBOutlet weak var stepperLabel: UILabel!
+    
+    var tripViewModel = TripViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        stepperLabel.text = String(Int(sender.value))
+    }
 }

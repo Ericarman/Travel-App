@@ -21,6 +21,13 @@ class TourOverviewViewController: UIViewController, UITableViewDataSource, UITab
         tourOverviewTableView.delegate = self
     }
     
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        
+        guard let orderTourVC = storyboard?.instantiateViewController(identifier: "OrderTourVC") as? OrderTourViewController else { return }
+        
+        navigationController?.pushViewController(orderTourVC, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return placeListViewModel.selectedPlacesViewModels.count
     }

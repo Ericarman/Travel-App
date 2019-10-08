@@ -43,6 +43,7 @@ class SignInViewController: UIViewController {
                 #else
                     let homeVC = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "TabBar")
                 #endif
+            homeVC.modalPresentationStyle = .overFullScreen
             self.present(homeVC, animated: true, completion: nil)
                 
 //            } else {
